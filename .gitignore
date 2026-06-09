@@ -1,0 +1,9 @@
+# Recortes temporales del Modelo usados durante el diseño
+.crops/
+
+# Vercel
+.vercel/
+
+# SO
+Thumbs.db
+.DS_Store
