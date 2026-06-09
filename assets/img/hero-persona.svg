@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" fill="none">
+  <g stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
+    <use href="#figura"/>
+  </g>
+  <g id="figura" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
+    <!-- silla -->
+    <path d="M150 270 L150 232 M118 270 H182 M150 232 Q104 232 100 180 L104 120 Q105 104 120 104 L150 106"/>
+    <circle cx="126" cy="272" r="7"/><circle cx="174" cy="272" r="7"/>
+    <!-- torso reclinado -->
+    <path d="M120 112 Q160 96 196 116 L210 160 Q190 180 150 176 L122 160 Z"/>
+    <!-- piernas cruzadas extendidas -->
+    <path d="M205 162 Q250 170 282 150 M282 150 L296 158 M210 176 Q256 188 290 172 L302 180"/>
+    <!-- cabeza -->
+    <circle cx="226" cy="92" r="26"/>
+    <path d="M214 84 Q226 76 238 84 M220 98 Q226 102 232 98"/>
+    <!-- pelo -->
+    <path d="M204 84 Q204 58 230 60 Q252 60 250 84"/>
+    <!-- brazos detrás de la cabeza -->
+    <path d="M200 110 Q188 86 206 72 M250 86 Q262 100 248 116"/>
+  </g>
+</svg>
