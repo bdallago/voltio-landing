@@ -168,3 +168,75 @@ a { color: inherit; }
   font-style: italic;
 }
 .hero__pill strong { font-weight: 500; }
+
+/* ---------- Títulos de sección (patrón del Modelo) ---------- */
+.titulo-seccion {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.titulo-rayo {
+  position: absolute;
+  left: -1.6rem;
+  top: 0.2em;
+  width: 22px;
+}
+.titulo-seccion__liviano { color: var(--fuerza); font-weight: 400; }
+.titulo-seccion__fuerte { color: var(--calma); font-weight: 700; }
+
+/* ---------- Sobre nosotros ---------- */
+.sobre { padding: 5rem 0; background: var(--idea); }
+.sobre__inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.sobre__texto p { margin-bottom: 1rem; max-width: 48ch; }
+.sobre__ilustracion img { width: min(260px, 70%); margin-inline: auto; }
+
+/* ---------- Servicios ---------- */
+.servicios { padding: 5rem 0; background: var(--idea); }
+.servicios__cabecera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  /* patrón de rayos en semitono, como el Modelo */
+  background-image: url('../assets/logos/Recurso 7.png');
+  background-size: 26px;
+  background-repeat: repeat;
+  background-position: right center;
+  background-blend-mode: soft-light;
+}
+.servicios__titulo { font-size: clamp(2.4rem, 6vw, 3.6rem); background: var(--idea); width: fit-content; padding-right: 1rem; }
+.servicios__caps { color: var(--calma); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+.servicios__italica { font-family: var(--font-textos); font-style: italic; font-weight: 500; color: var(--calma); }
+.servicios__burbuja {
+  background: var(--fuerza);
+  color: var(--idea);
+  font-family: var(--font-botones);
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.2rem;
+  max-width: 34ch;
+  justify-self: end;
+}
+.servicios__burbuja em { font-family: var(--font-textos); font-style: italic; }
+.servicios__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.servicio {
+  background: #FFFDF4;
+  border: 2px solid var(--calma);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.servicio:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(1, 89, 90, 0.15); }
+.servicio img { width: 30px; margin-bottom: 1rem; }
+.servicio h3 { color: var(--calma); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem; }
+.servicio p { font-size: 0.95rem; }
