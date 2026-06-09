@@ -1,21 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" fill="none">
-  <g stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
-    <use href="#figura"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300" fill="none">
+  <!-- contorno blanco tipo sticker -->
+  <g stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M95 218 L150 202 L205 212"/>
+    <path d="M205 212 L252 150"/>
+    <circle cx="264" cy="124" r="24"/>
+    <path d="M210 266 V230 M180 228 H246 M244 226 L266 154"/>
   </g>
-  <g id="figura" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF">
-    <!-- silla -->
-    <path d="M150 270 L150 232 M118 270 H182 M150 232 Q104 232 100 180 L104 120 Q105 104 120 104 L150 106"/>
-    <circle cx="126" cy="272" r="7"/><circle cx="174" cy="272" r="7"/>
+  <g stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round">
+    <!-- silla de oficina -->
+    <g stroke-width="5" fill="none">
+      <path d="M210 266 V232"/>
+      <path d="M210 268 L182 272 M210 268 L238 272"/>
+      <path d="M178 230 Q212 222 248 230"/>
+      <path d="M246 226 L268 156"/>
+      <path d="M258 186 L280 162"/>
+    </g>
+    <circle cx="180" cy="276" r="6" fill="#FFFFFF" stroke-width="4"/>
+    <circle cx="240" cy="276" r="6" fill="#FFFFFF" stroke-width="4"/>
     <!-- torso reclinado -->
-    <path d="M120 112 Q160 96 196 116 L210 160 Q190 180 150 176 L122 160 Z"/>
-    <!-- piernas cruzadas extendidas -->
-    <path d="M205 162 Q250 170 282 150 M282 150 L296 158 M210 176 Q256 188 290 172 L302 180"/>
+    <path d="M202 218 Q200 206 212 198 L244 158 Q254 146 262 152 L268 160 Q258 196 230 214 Q214 222 202 218 Z" fill="#FFFFFF" stroke-width="5"/>
+    <!-- piernas extendidas cruzadas -->
+    <g stroke-width="6" fill="none">
+      <path d="M206 210 L152 198 L98 214"/>
+      <path d="M210 218 L158 212 L104 232"/>
+      <path d="M98 214 L84 210 M104 232 L90 232"/>
+    </g>
     <!-- cabeza -->
-    <circle cx="226" cy="92" r="26"/>
-    <path d="M214 84 Q226 76 238 84 M220 98 Q226 102 232 98"/>
+    <circle cx="264" cy="124" r="24" fill="#FFFFFF" stroke-width="5"/>
     <!-- pelo -->
-    <path d="M204 84 Q204 58 230 60 Q252 60 250 84"/>
+    <path d="M244 114 Q246 96 266 98 Q284 98 284 116" fill="none" stroke-width="5"/>
+    <!-- cara: ojos cerrados y sonrisa -->
+    <g stroke-width="3.5" fill="none">
+      <path d="M252 122 Q256 126 260 122"/>
+      <path d="M268 122 Q272 126 276 122"/>
+      <path d="M258 136 Q264 141 270 136"/>
+    </g>
     <!-- brazos detrás de la cabeza -->
-    <path d="M200 110 Q188 86 206 72 M250 86 Q262 100 248 116"/>
+    <g stroke-width="6" fill="none">
+      <path d="M246 158 Q228 132 246 112 Q252 106 260 104"/>
+      <path d="M262 154 Q292 146 290 118 Q288 106 276 102"/>
+    </g>
   </g>
 </svg>
