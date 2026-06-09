@@ -1,3 +1,7 @@
+// Marca que hay JS: el CSS solo oculta .reveal cuando esta clase existe,
+// así la página es legible también sin JavaScript
+document.documentElement.classList.add('js');
+
 // Animación de aparición por sección
 const observer = new IntersectionObserver(
   (entries) => {

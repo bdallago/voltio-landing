@@ -73,17 +73,17 @@ a { color: inherit; }
 .btn--calma { background: var(--calma); color: var(--idea); }
 .btn--fuerza { background: var(--fuerza); color: var(--idea); }
 
-/* Reveal on scroll (JS agrega .visible) */
-.reveal {
+/* Reveal on scroll (JS agrega .visible; sin JS todo queda visible) */
+.js .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.reveal.visible { opacity: 1; transform: none; }
+.js .reveal.visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 /* ---------- Nav ---------- */
