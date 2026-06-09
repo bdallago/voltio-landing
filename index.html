@@ -16,7 +16,23 @@
 </head>
 <body>
   <!-- NAV (Task 2) -->
-  <header class="nav" id="inicio"></header>
+  <header class="nav" id="inicio">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo" aria-label="Voltio — inicio">
+        <img src="assets/logos/Recurso 10.png" alt="Isologo Voltio" width="34" height="44">
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <!-- HERO (Task 3) -->
@@ -34,7 +50,17 @@
   </main>
 
   <!-- FOOTER (Task 2) -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
+      <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
+      <div class="footer__contacto">
+        <a href="mailto:bdallago01@gmail.com">bdallago01@gmail.com</a>
+        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp +54 9 341 628-9453</a>
+      </div>
+      <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>

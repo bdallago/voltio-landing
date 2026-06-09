@@ -85,3 +85,54 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------- Nav ---------- */
+/* En el Modelo la nav flota sobre el hero: fondo transparente, texto calma */
+.nav {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  padding: 1rem 0;
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+.nav__links a {
+  font-family: var(--font-botones);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--calma);
+}
+.nav__links a:hover { color: var(--teal-medio); }
+.nav__toggle { display: none; }
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--calma);
+  color: var(--idea);
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+.footer__inner { display: grid; gap: 1rem; justify-items: center; }
+.footer__logo { width: 160px; }
+.footer__tagline { font-family: var(--font-textos); }
+.footer__tagline em { font-style: italic; }
+.footer__contacto { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+.footer__contacto a {
+  font-family: var(--font-botones);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--aqua-claro);
+  text-decoration: none;
+}
+.footer__contacto a:hover { color: var(--fuerza); }
+.footer__copy { font-size: 0.8rem; opacity: 0.7; }
