@@ -412,6 +412,7 @@ a { color: inherit; }
 
   .sobre__inner,
   .servicios__cabecera,
+  .servicios__grid,
   .productos__grid,
   .clientes__grid { grid-template-columns: 1fr; }
   .servicios__burbuja { justify-self: start; }
