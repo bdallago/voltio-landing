@@ -240,3 +240,64 @@ a { color: inherit; }
 .servicio img { width: 30px; margin-bottom: 1rem; }
 .servicio h3 { color: var(--calma); font-weight: 600; margin-bottom: 0.5rem; font-size: 1.15rem; }
 .servicio p { font-size: 0.95rem; }
+
+/* ---------- Productos ---------- */
+.productos { padding: 5rem 0; background: var(--idea); }
+.productos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.producto {
+  position: relative;
+  background: var(--calma);
+  color: var(--idea);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 2rem;
+}
+.producto h3 { font-weight: 700; font-size: 1.5rem; margin-bottom: 0.6rem; }
+.producto p { font-size: 0.98rem; opacity: 0.92; }
+.producto__badge {
+  position: absolute;
+  top: -0.9rem;
+  left: 2rem;
+  background: var(--fuerza);
+  color: var(--idea);
+  font-family: var(--font-botones);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35em 1em;
+  border-radius: 999px;
+}
+.producto__badge--dev { background: var(--teal-apagado); }
+
+/* ---------- Clientes ---------- */
+.clientes { padding: 5rem 0; background: var(--calma); }
+.titulo-seccion--claro .titulo-seccion__liviano { color: var(--aqua-claro); }
+.titulo-seccion--claro .titulo-seccion__fuerte { color: var(--idea); }
+.clientes__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.testimonio {
+  background: var(--idea);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+  align-content: space-between;
+}
+.testimonio blockquote {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--calma);
+}
+.testimonio figcaption {
+  font-family: var(--font-botones);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--teal-medio);
+}
