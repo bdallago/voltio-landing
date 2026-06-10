@@ -39,3 +39,19 @@ if (formContacto) {
       `mailto:bdallago01@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
   });
 }
+
+// Menú hamburguesa en móvil
+const toggle = document.querySelector('.nav__toggle');
+const links = document.querySelector('.nav__links');
+if (toggle && links) {
+  toggle.addEventListener('click', () => {
+    const abierto = links.classList.toggle('nav__links--abierto');
+    toggle.setAttribute('aria-expanded', String(abierto));
+  });
+  links.querySelectorAll('a').forEach((a) =>
+    a.addEventListener('click', () => {
+      links.classList.remove('nav__links--abierto');
+      toggle.setAttribute('aria-expanded', 'false');
+    })
+  );
+}
