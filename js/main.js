@@ -18,3 +18,24 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+// Formulario de contacto: arma un mailto con los campos cargados
+const formContacto = document.querySelector('#form-contacto');
+if (formContacto) {
+  formContacto.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nombre = formContacto.nombre.value.trim();
+    const empresa = formContacto.empresa.value.trim();
+    const mensaje = formContacto.mensaje.value.trim();
+    const error = formContacto.querySelector('.contacto__error');
+    if (!nombre || !mensaje) {
+      error.hidden = false;
+      return;
+    }
+    error.hidden = true;
+    const asunto = `Consulta desde la web — ${nombre}${empresa ? ` (${empresa})` : ''}`;
+    const cuerpo = `Nombre: ${nombre}\nEmpresa: ${empresa || '-'}\n\n${mensaje}`;
+    window.location.href =
+      `mailto:bdallago01@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+  });
+}

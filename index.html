@@ -149,7 +149,36 @@
   </div>
 </section>
     <!-- CONTACTO (Task 8) -->
-    <section class="contacto" id="contacto"></section>
+    <section class="contacto" id="contacto">
+  <div class="contacto__rayos" aria-hidden="true">
+    <img src="assets/logos/Recurso 7.png" alt="" width="26">
+    <img src="assets/logos/Recurso 7.png" alt="" width="26">
+    <img src="assets/logos/Recurso 7.png" alt="" width="26">
+  </div>
+  <div class="container">
+    <h2 class="contacto__banner reveal">Encontremos la <em>solución</em> juntos</h2>
+    <form id="form-contacto" class="contacto__panel reveal" novalidate>
+      <div class="contacto__col contacto__col--datos">
+        <label for="f-nombre">Nombre</label>
+        <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+        <label for="f-empresa">Empresa</label>
+        <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+      </div>
+      <div class="contacto__col contacto__col--mensaje">
+        <label for="f-mensaje">¿Cómo te podemos ayudar?</label>
+        <textarea id="f-mensaje" name="mensaje" rows="7" required></textarea>
+      </div>
+      <div class="contacto__acciones">
+        <button type="submit" class="btn btn--calma">Enviar consulta</button>
+        <a class="btn btn--fuerza" target="_blank" rel="noopener"
+           href="https://wa.me/5493416289453?text=%C2%A1Hola%20Voltio!%20Quiero%20hacer%20una%20consulta.">
+          Escribinos por WhatsApp
+        </a>
+        <p class="contacto__error" role="alert" hidden>Completá tu nombre y el mensaje, por favor.</p>
+      </div>
+    </form>
+  </div>
+</section>
   </main>
 
   <!-- FOOTER (Task 2) -->
