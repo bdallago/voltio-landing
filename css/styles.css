@@ -55,6 +55,15 @@ a { color: inherit; }
   margin-inline: auto;
 }
 
+/* Texto solo para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
 /* Botones (Pacaembu SemiBold → Poppins 600) */
 .btn {
   display: inline-block;
@@ -364,7 +373,7 @@ a { color: inherit; }
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1.5rem 2rem 0;
+  padding: 1.5rem 2rem 2rem;
 }
 .contacto__error {
   color: var(--idea);
