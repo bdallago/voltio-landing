@@ -1,6 +1,9 @@
 // Marca que hay JS: el CSS solo oculta .reveal cuando esta clase existe,
-// así la página es legible también sin JavaScript
-document.documentElement.classList.add('js');
+// así la página es legible también sin JavaScript.
+// ?noanim desactiva las animaciones (útil para capturas/QA).
+if (!location.search.includes('noanim')) {
+  document.documentElement.classList.add('js');
+}
 
 // Animación de aparición por sección
 const observer = new IntersectionObserver(
