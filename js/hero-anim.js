@@ -1,6 +1,7 @@
 (function () {
   // Salir si ?noanim está en la URL (modo QA/capturas)
   if (location.search.includes('noanim')) return;
+  if (!window.gsap) return;
 
   const logoWrap = document.querySelector('.hero__logo-wrap');
   const wordmark = document.querySelector('.vl-wordmark');
@@ -10,6 +11,7 @@
   const cables   = document.querySelectorAll('.cable');
 
   if (!logoWrap || !powerBtn) return;
+  if (!wordmark || !tagline || !cta) return;
 
   // --- Setup inicial: todo invisible, cables sin trazar ---
   gsap.set([logoWrap, cta, powerBtn], { opacity: 0 });
@@ -70,7 +72,7 @@
   tl.to({}, { duration: 1.2 });
 
   // 8. Fade out de todo
-  tl.to([logoWrap, cta, powerBtn], {
+  tl.to([logoWrap, cta, powerBtn, tagline], {
     opacity: 0,
     duration: 0.5,
     ease: 'power2.in',
