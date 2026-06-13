@@ -1,6 +1,9 @@
 # Recortes temporales del Modelo usados durante el diseño
 .crops/
 
+# Superpowers (brainstorming y anotaciones)
+.superpowers/
+
 # Vercel
 .vercel/
 
