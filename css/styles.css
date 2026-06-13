@@ -150,11 +150,19 @@ a { color: inherit; }
 /* ---------- Hero ---------- */
 .hero {
   height: 100vh;
-  background: #0a0a0a;
+  background: url('../public/hero-section.jpg') center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 1;
+  pointer-events: none;
 }
 .hero__anim {
   display: flex;
@@ -163,6 +171,8 @@ a { color: inherit; }
   gap: 2rem;
   width: 100%;
   padding: 0 1.5rem;
+  position: relative;
+  z-index: 3;
 }
 .hero__logo-wrap {
   opacity: 0;
@@ -175,8 +185,14 @@ a { color: inherit; }
   opacity: 0;
 }
 .hero__cables {
-  width: min(360px, 75vw);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(380px, 78vw);
   overflow: visible;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* ---------- Títulos de sección (patrón del Modelo) ---------- */
