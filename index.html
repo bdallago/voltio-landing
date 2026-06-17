@@ -12,6 +12,8 @@
        Al comprar las licencias reales, borrar este <link> y seguir las
        instrucciones del bloque @font-face en css/styles.css -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <!-- Adobe Fonts (Loretta) -->
+  <link rel="stylesheet" href="https://use.typekit.net/jdx5axp.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,17 +21,17 @@
   <header class="nav" id="inicio">
     <div class="container nav__inner">
       <a href="#inicio" class="nav__logo" aria-label="Voltio — inicio">
-        <img src="assets/logos/Recurso 10.png" alt="Isologo Voltio" width="34" height="44">
+        <img class="nav__wordmark" src="public/Voltio Calma.png" alt="Voltio" width="150" height="38">
       </a>
       <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav__links" aria-label="Navegación principal">
-        <a href="#sobre-nosotros">Sobre nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#productos">Productos</a>
-        <a href="#clientes">Clientes</a>
+        <a href="#opiniones">Clientes</a>
         <a href="#contacto">Contacto</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Sobre nosotros</a>
       </nav>
     </div>
   </header>
@@ -37,204 +39,239 @@
   <main>
     <!-- HERO animado -->
     <section class="hero" id="inicio-hero">
+      <!-- Escena: gente de distintos rubros, se ilumina al "encender" la luz -->
+      <div class="hero__scene" aria-hidden="true">
+        <!-- Izquierda -->
+        <div class="hero__scene-side hero__scene-side--left">
+          <img class="hero__fig hero__fig--back" src="public/Repartidor.png" alt="" width="470" height="836">
+          <img class="hero__fig" src="public/Oficinista.png" alt="" width="484" height="859">
+          <img class="hero__fig" src="public/operaria_tecnica_sticker_recortado.png" alt="" width="291" height="784">
+          <img class="hero__fig hero__fig--back" src="public/profesional_tablet_sticker_recortado.png" alt="" width="277" height="789">
+        </div>
+        <!-- Derecha -->
+        <div class="hero__scene-side hero__scene-side--right">
+          <img class="hero__fig" src="public/escritorio_sticker_recortado.png" alt="" width="463" height="680">
+          <img class="hero__fig hero__fig--back" src="public/Industrial.png" alt="" width="471" height="836">
+          <img class="hero__fig" src="public/cliente_sticker_recortado.png" alt="" width="347" height="763">
+          <img class="hero__fig" src="public/Barista.png" alt="" width="470" height="836">
+        </div>
+      </div>
+
       <!-- Overlay negro que se disuelve cuando Voltio "enciende" la escena -->
       <div class="hero__overlay"></div>
 
       <div class="hero__anim">
 
-        <!-- Logo Voltio incrustado inline para animar sus paths con GSAP -->
-        <div class="hero__logo-wrap" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.78 266.53">
-            <defs>
-              <style>
-                .vl-fill { fill: #fff8e5; }
-                .vl-mark { fill: #fff8e5; }
-              </style>
-            </defs>
-            <!-- Tagline -->
-            <g class="vl-tagline">
-              <text fill="#fff8e5" font-family="Poppins, sans-serif" font-style="italic" font-size="62" x="0" y="182">*La fuerza que mueve</text>
-              <text fill="#fff8e5" font-family="Poppins, sans-serif" font-style="italic" font-size="86" x="181" y="247">tu negocio</text>
-            </g>
-            <!-- Wordmark VOLTIO -->
-            <g class="vl-wordmark">
-              <path class="vl-mark" d="M31.76,8.26l28.07,73.5L87.77,8.26h16.74l-35.86,94.01h-18.25L14.52,8.26h17.24Z"/>
-              <path class="vl-mark" d="M197.12,55.33c0,30.21-18.62,48.2-44.8,48.2s-44.68-18-44.68-48.2S126.27,7,152.33,7s44.8,18,44.8,48.33ZM124.39,55.33c0,21.52,12.83,32.97,27.94,32.97s28.06-11.45,28.06-32.97-12.96-32.98-28.06-32.98-27.94,11.33-27.94,32.98Z"/>
-              <path class="vl-mark" d="M229.71,8.26v78.65h45.81v15.35h-62.04V8.26h16.24Z"/>
-              <path class="vl-mark" d="M342.22,8.26v15.35h-29.7v78.66h-16.24V23.61h-29.57v-15.35h75.51Z"/>
-              <path class="vl-mark" d="M371.03,8.26v94.01h-16.24V8.26h16.24Z"/>
-              <path class="vl-mark" d="M432.07,7c-26.05,0-44.68,18-44.68,48.33s18.63,48.2,44.68,48.2,44.8-18,44.8-48.2-18.62-48.33-44.8-48.33ZM411.31,97.43c-.29-3.82-.46-12.78,4.46-22.55,4.9-9.74,12.18-14.94,15.42-16.99-12.26-.33-24.51-.66-36.77-.99,18.59-14.6,37.17-29.2,55.76-43.8.79,3.31,2.59,12.83-1.82,23.57-3.92,9.55-10.62,14.84-13.48,16.86,11.65.27,23.31.55,34.96.82-19.51,14.36-39.02,28.72-58.52,43.08Z"/>
-            </g>
-          </svg>
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            <img src="public/Soluciones de software.svg" alt="Soluciones de software" width="578" height="188">
+          </h1>
+          <a href="#contacto" class="btn btn--calma hero__cta">Diagnóstico gratis</a>
         </div>
 
-        <!-- h1 accesible oculto visualmente -->
-        <h1 class="sr-only">Voltio — La fuerza que mueve tu negocio</h1>
-
-        <!-- CTA — siempre por encima de la animación -->
-        <a href="#contacto" class="btn btn--calma hero__cta">Hablemos →</a>
-
       </div>
-
-      <!-- SVG de cables — posición absoluta, recorre toda la altura del hero -->
-      <svg class="hero__cables" viewBox="0 0 400 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Cable vertical central: sube desde el botón hasta el logo -->
-        <path class="cable cable--v" d="M200,600 L200,40" stroke="#2D5BFF" stroke-width="2" stroke-linecap="round"/>
-        <!-- Rama izquierda con curva suave -->
-        <path class="cable cable--l" d="M200,300 Q140,180 60,40" stroke="#2D5BFF" stroke-width="2" stroke-linecap="round"/>
-        <!-- Rama derecha con curva suave -->
-        <path class="cable cable--r" d="M200,300 Q260,180 340,40" stroke="#2D5BFF" stroke-width="2" stroke-linecap="round"/>
-        <!-- Botón de encendido -->
-        <g class="power-btn">
-          <circle cx="200" cy="608" r="24" stroke="#2D5BFF" stroke-width="2"/>
-          <line x1="200" y1="593" x2="200" y2="606" stroke="#2D5BFF" stroke-width="3" stroke-linecap="round"/>
-          <path d="M186,597 A18,18 0 1,0 214,597" stroke="#2D5BFF" stroke-width="2.5" stroke-linecap="round"/>
-        </g>
-      </svg>
-
     </section>
-    <!-- SOBRE NOSOTROS (Task 4) -->
-    <section class="sobre" id="sobre-nosotros">
-  <div class="container sobre__inner">
-    <div class="sobre__texto reveal">
-      <h2 class="titulo-seccion">
-        <img src="assets/logos/Recurso 7.png" alt="" class="titulo-rayo" width="22">
-        <span class="titulo-seccion__liviano">Sobre</span><br>
-        <span class="titulo-seccion__fuerte">nosotros</span>
-      </h2>
-      <p><strong><em>Voltio</em></strong> es una startup unipersonal de desarrollo de software, fundada por Beno (vibecoder y web developer).</p>
-      <p>Nació de una idea simple: la tecnología tiene que trabajar para tu negocio, y no al revés. Por eso cada proyecto arranca escuchando el problema real antes de escribir una sola línea de código.</p>
-      <p>Trabajamos cerca, en lenguaje claro y sin vueltas: entendemos lo que necesitás, lo construimos y te acompañamos después de la entrega.</p>
-    </div>
-    <div class="sobre__ilustracion reveal">
-      <img src="assets/img/nosotros-retrato.svg" alt="Retrato ilustrado de Beno, fundador de Voltio" width="260" height="260">
-    </div>
-  </div>
-</section>
-    <!-- SERVICIOS (Task 5) — "SOLUCIONES a medida" -->
-    <section class="servicios" id="servicios">
-  <div class="container">
-    <div class="servicios__cabecera">
-      <h2 class="servicios__titulo reveal">
-        <span class="servicios__caps">Soluciones</span><br>
-        <span class="servicios__italica">a medida</span>
-      </h2>
-      <div class="servicios__burbuja reveal">
-        <p>Damos <em>respuesta</em> a los problemas a través de ideas <em>pensadas</em> para tu negocio</p>
+    <!-- SEGUNDO PASO DEL TUNEL: problema | estadística | solución + testimonios -->
+    <section class="propuesta" id="servicios">
+      <div class="container">
+        <!-- Cabecera: título + ribbon (dos PNGs apilados, desktop y mobile) -->
+        <div class="propuesta__cabecera reveal">
+          <img src="public/Soluciones a medida_izq.png" alt="Soluciones a medida">
+          <img src="public/Soluciones a medida_der.png" alt="Damos respuesta a los problemas a través de ideas pensadas para tu negocio">
+        </div>
+
+        <div class="tunel" id="clientes">
+          <!-- Espaciador superior: extiende la barra hacia arriba sin afectar alignment -->
+          <div></div>
+          <div class="tunel__bar-top"></div>
+          <div></div>
+
+          <!-- Fila 1 -->
+          <div class="tunel__fila">
+            <article class="tunel__lado tunel__lado--izq reveal">
+              <h3>Horas perdidas en tareas manuales</h3>
+            </article>
+            <div class="tunel__stat">
+              <span class="tunel__num"><span class="tunel__mas">+</span>500</span>
+              <span class="tunel__label">horas ahorradas</span>
+            </div>
+            <article class="tunel__lado reveal">
+              <h3>Automatización e integraciones</h3>
+            </article>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="tunel__fila">
+            <article class="tunel__lado tunel__lado--izq reveal">
+              <h3>Planillas de Excel sin fin</h3>
+            </article>
+            <div class="tunel__stat">
+              <span class="tunel__num"><span class="tunel__mas">+</span>240</span>
+              <span class="tunel__label">empleados alcanzados</span>
+            </div>
+            <article class="tunel__lado reveal">
+              <h3>Aplicaciones a medida</h3>
+            </article>
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="tunel__fila">
+            <article class="tunel__lado tunel__lado--izq reveal">
+              <h3>Una web que no trabaja para vos</h3>
+            </article>
+            <div class="tunel__stat">
+              <span class="tunel__num"><span class="tunel__mas">+</span>12</span>
+              <span class="tunel__label">meses con clientes</span>
+            </div>
+            <article class="tunel__lado reveal">
+              <h3>Landing pages</h3>
+            </article>
+          </div>
+
+          <!-- Espaciador inferior: extiende la barra hasta el hub -->
+          <div></div>
+          <div class="tunel__bar-bot"></div>
+          <div></div>
+
+          <!-- Hub — parte de la barra, directo como hijo del grid -->
+          <div class="tunel__hub-void"></div>
+          <div class="tunel__hub reveal">
+            <span class="hub__num">+6</span>
+            <span class="hub__label">empresas nos eligen</span>
+          </div>
+          <div class="tunel__hub-void"></div>
+        </div>
+
+        <!-- Carrusel de testimonios conectado al hub -->
+        <div class="carrusel" id="opiniones">
+          <div class="carrusel__track">
+            <!-- EDITAR -->
+            <figure class="testimonio"><blockquote>«Lanzamos el Prode corporativo para el Mundial y fue el evento interno más participado del año. RRHH siguió todo desde el panel, con métricas y los kits de comunicación listos.»</blockquote><figcaption>Lucía M. — Líder de Cultura, retail</figcaption></figure>
+            <figure class="testimonio"><blockquote>«Con HRKit unificamos licencias, clima y on-boarding en un solo lugar. Las encuestas anónimas nos dieron una foto real del equipo que antes no teníamos.»</blockquote><figcaption>Diego A. — Gerente de RRHH</figcaption></figure>
+            <figure class="testimonio"><blockquote>«El muro de reconocimientos de HRKit cambió el clima de la oficina. La gente se siente vista y se nota en el día a día.»</blockquote><figcaption>Carolina S. — People &amp; Culture</figcaption></figure>
+          </div>
+          <div class="carrusel__controles" role="tablist" aria-label="Testimonios">
+            <button class="carrusel__dot carrusel__dot--activo" aria-label="Testimonio 1" role="tab"></button>
+            <button class="carrusel__dot" aria-label="Testimonio 2" role="tab"></button>
+            <button class="carrusel__dot" aria-label="Testimonio 3" role="tab"></button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="servicios__grid">
-      <article class="servicio reveal">
-        <img src="assets/logos/Recurso 8.png" alt="" width="30" height="40">
-        <h3>Desarrollo web</h3>
-        <p>Sitios y plataformas web rápidos, modernos y pensados para convertir visitas en clientes.</p>
-      </article>
-      <article class="servicio reveal">
-        <img src="assets/logos/Recurso 8.png" alt="" width="30" height="40">
-        <h3>Aplicaciones a medida</h3>
-        <p>Software que se adapta a tus procesos: gestión, paneles internos y herramientas hechas para vos.</p>
-      </article>
-      <article class="servicio reveal">
-        <img src="assets/logos/Recurso 8.png" alt="" width="30" height="40">
-        <h3>Automatización e integraciones</h3>
-        <p>Conectamos tus sistemas y automatizamos tareas repetitivas para que ganes tiempo todos los días.</p>
-      </article>
-    </div>
-  </div>
-</section>
-    <!-- PRODUCTOS (Task 6) -->
-    <section class="productos" id="productos">
-  <div class="container">
-    <h2 class="titulo-seccion reveal">
-      <img src="assets/logos/Recurso 7.png" alt="" class="titulo-rayo" width="22">
-      <span class="titulo-seccion__liviano">Nuestros</span><br>
-      <span class="titulo-seccion__fuerte">productos</span>
-    </h2>
-    <div class="productos__grid">
-      <!-- EDITAR: nombres y descripciones de productos reales -->
-      <article class="producto reveal">
-        <span class="producto__badge producto__badge--dev">En desarrollo</span>
-        <h3>Voltio Gestión</h3>
-        <p>Panel de administración todo-en-uno para pymes: clientes, ventas y reportes en un solo lugar, sin planillas eternas.</p>
-      </article>
-      <article class="producto reveal">
-        <span class="producto__badge">Disponible</span>
-        <h3>Voltio Turnos</h3>
-        <p>Sistema de reservas y turnos online para negocios de servicios. Tus clientes reservan solos, vos te dedicás a atenderlos.</p>
-      </article>
-    </div>
-  </div>
-</section>
-    <!-- CLIENTES (Task 7) -->
-    <section class="clientes" id="clientes">
-  <div class="container">
-    <h2 class="titulo-seccion titulo-seccion--claro reveal">
-      <img src="assets/logos/Recurso 5.png" alt="" class="titulo-rayo" width="22">
-      <span class="titulo-seccion__liviano">Clientes que</span><br>
-      <span class="titulo-seccion__fuerte">confían</span>
-    </h2>
-    <div class="clientes__grid">
-      <!-- EDITAR: reemplazar por testimonios reales -->
-      <figure class="testimonio reveal">
-        <blockquote>«Voltio entendió exactamente lo que necesitábamos y lo resolvió en semanas, no en meses.»</blockquote>
-        <figcaption>Mariana L. — Estudio contable</figcaption>
-      </figure>
-      <figure class="testimonio reveal">
-        <blockquote>«Automatizaron la carga de pedidos y hoy ahorramos horas todos los días. Comunicación clara de principio a fin.»</blockquote>
-        <figcaption>Jorge P. — Distribuidora mayorista</figcaption>
-      </figure>
-      <figure class="testimonio reveal">
-        <blockquote>«Nuestra web pasó de ser una tarjeta de presentación a traernos consultas todas las semanas.»</blockquote>
-        <figcaption>Sofía R. — Estudio de arquitectura</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-    <!-- CONTACTO (Task 8) -->
-    <section class="contacto" id="contacto">
-  <div class="contacto__rayos" aria-hidden="true">
-    <img src="assets/logos/Recurso 7.png" alt="" width="26">
-    <img src="assets/logos/Recurso 7.png" alt="" width="26">
-    <img src="assets/logos/Recurso 7.png" alt="" width="26">
-  </div>
-  <div class="container">
-    <h2 class="contacto__banner reveal">Encontremos la <em>solución</em> juntos</h2>
-    <form id="form-contacto" class="contacto__panel reveal" novalidate>
-      <div class="contacto__col contacto__col--datos">
-        <label for="f-nombre">Nombre</label>
-        <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
-        <label for="f-empresa">Empresa</label>
-        <input id="f-empresa" name="empresa" type="text" autocomplete="organization">
+    </section>
+<!-- CÓMO TRABAJAMOS -->
+    <section class="proceso" id="como-trabajamos">
+      <div class="container">
+        <h2 class="proceso__titulo">Cómo trabajamos</h2>
+        <p class="proceso__intro reveal">Sin riesgo: primero entendemos tu problema y te mostramos la solución. Recién si te convence, avanzamos.</p>
+        <ol class="proceso__pasos">
+          <li class="paso reveal">
+            <span class="paso__num">1</span>
+            <h3>Diagnóstico gratis</h3>
+            <p>Analizamos tu problema y te entregamos un diagnóstico claro: qué está bien, qué no y qué se puede mejorar. Sin costo y sin compromiso.</p>
+          </li>
+          <li class="paso reveal">
+            <span class="paso__num">2</span>
+            <h3>Propuesta a medida</h3>
+            <p>Te llevamos una solución concreta, con alcance y precio, pensada para tu negocio y tu presupuesto.</p>
+          </li>
+          <li class="paso reveal">
+            <span class="paso__num">3</span>
+            <h3>Implementación</h3>
+            <p>Si te convence, lo construimos y te acompañamos después de la entrega.</p>
+          </li>
+        </ol>
+        <a href="#contacto" class="btn proceso__cta">Quiero soluciones</a>
       </div>
-      <div class="contacto__col contacto__col--mensaje">
-        <label for="f-mensaje">¿Cómo te podemos ayudar?</label>
-        <textarea id="f-mensaje" name="mensaje" rows="7" required></textarea>
+    </section>
+    <!-- AGENDAR REUNIÓN -->
+    <!-- EDITAR: reemplazá el href del botón con tu link de Calendly (calendly.com) o Google Calendar Appointment Scheduling -->
+    <section class="agenda">
+      <div class="container agenda__inner">
+        <div class="agenda__col-izq reveal">
+          <h2 class="agenda__titulo">Hablemos sobre tu negocio</h2>
+          <p class="agenda__texto">Agendá una reunión virtual con nuestro equipo. Sin costo ni ataduras, así podemos charlar sobre cómo ayudarte.</p>
+          <div class="agenda__acciones">
+            <a class="btn btn--calma agenda__btn" href="https://calendly.com/voltio" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Agendá una reunión
+            </a>
+            <p class="agenda__meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Google Meet · 30 minutos · sin compromiso
+            </p>
+          </div>
+        </div>
+        <div class="agenda__img reveal" aria-hidden="true">
+          <img src="public/Oficinista.png" alt="" width="300" height="532">
+        </div>
       </div>
-      <div class="contacto__acciones">
-        <button type="submit" class="btn btn--calma">Enviar consulta</button>
-        <a class="btn btn--fuerza" target="_blank" rel="noopener"
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto-banner" id="contacto">
+      <img class="contacto-banner__img" src="public/Fondo sección contacto ok.png" alt="La tranquilidad de tomar la decisión correcta. Contactanos" width="2334" height="978">
+      <div class="contacto-banner__botones">
+        <a class="btn-icono btn-icono--wsp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"
            href="https://wa.me/5493416289453?text=%C2%A1Hola%20Voltio!%20Quiero%20hacer%20una%20consulta.">
-          Escribinos por WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.5 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.34zM12 2.04A9.96 9.96 0 0 0 3.5 17.1L2.05 22l5.02-1.32A9.96 9.96 0 1 0 12 2.04zm0 18.27c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.27 8.27 0 1 1 6.99 4.06z"/>
+          </svg>
         </a>
-        <p class="contacto__error" role="alert" hidden>Completá tu nombre y el mensaje, por favor.</p>
+        <a class="btn-icono btn-icono--email" href="mailto:bdallago01@gmail.com" aria-label="Contactar por email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+          </svg>
+        </a>
+        <a class="btn-icono btn-icono--linkedin" target="_blank" rel="noopener" aria-label="Contactar por LinkedIn" href="">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34v-7.2H5.95v7.2h2.39zM7.15 10.1a1.39 1.39 0 1 0 0-2.78 1.39 1.39 0 0 0 0 2.78zm11.19 8.24v-4.13c0-2.21-.47-3.91-3.06-3.91-1.24 0-2.08.68-2.42 1.33h-.03v-1.12H10.5v7.2h2.39v-3.56c0-.94.18-1.85 1.34-1.85 1.15 0 1.16 1.07 1.16 1.91v3.5h2.39z"/>
+          </svg>
+        </a>
+        <a class="btn-icono btn-icono--calendario" href="https://calendly.com/voltio" target="_blank" rel="noopener" aria-label="Agendar una reunión">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </a>
       </div>
-    </form>
-  </div>
-</section>
+    </section>
   </main>
 
-  <!-- FOOTER (Task 2) -->
+  <!-- FOOTER -->
   <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <h4>Voltio</h4>
+        <a href="nosotros.html">Sobre nosotros</a>
+        <a href="index.html#como-trabajamos">Cómo trabajamos</a>
+        <a href="index.html#clientes">Clientes</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:bdallago01@gmail.com">Email</a>
+        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="index.html#contacto">Diagnóstico gratis</a>
+      </div>
+      <div class="footer__col">
+        <h4>Productos</h4>
+        <a href="productos.html">Todos los productos</a>
+        <a href="productos.html#hrkit">HRKit</a>
+        <a href="productos.html#prode">Prode corporativo</a>
+        <a href="productos.html#pueriapp">PueriApp</a>
+      </div>
+    </div>
     <div class="container footer__inner">
-      <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
-      <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
-      <div class="footer__contacto">
-        <a href="mailto:bdallago01@gmail.com">bdallago01@gmail.com</a>
-        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp +54 9 341 628-9453</a>
+      <div class="footer__marca">
+        <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
+        <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
       </div>
       <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- FLOTANTE WHATSAPP -->
+  <a class="wsp-float" href="https://wa.me/5493416289453?text=%C2%A1Hola%20Voltio!%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.5 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.34zM12 2.04A9.96 9.96 0 0 0 3.5 17.1L2.05 22l5.02-1.32A9.96 9.96 0 1 0 12 2.04zm0 18.27c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.27 8.27 0 1 1 6.99 4.06z"/>
+    </svg>
+  </a>
 
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
