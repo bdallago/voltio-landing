@@ -1,0 +1,39 @@
+# Voltio
+
+> Startup de desarrollo de software de Rosario, Argentina. Construye automatizaciones, aplicaciones a medida y landing pages para pymes que quieren dejar de hacer todo a mano.
+
+## Quiénes somos
+
+Voltio es una empresa de software fundada por Benito Dallago. El enfoque es escuchar el problema real del cliente antes de proponer cualquier solución tecnológica. Trabajamos principalmente con pymes argentinas: estudios contables, distribuidoras, negocios de servicios y cualquier empresa que pierda tiempo en procesos manuales.
+
+## Servicios
+
+- **Automatización e integraciones**: eliminamos tareas manuales repetitivas y conectamos sistemas existentes (ERP, CRM, planillas, APIs)
+- **Aplicaciones a medida**: desarrollamos software específico para el proceso de cada negocio, sin soluciones genéricas
+- **Landing pages**: sitios web optimizados que generan consultas y trabajan para el negocio
+
+## Productos propios
+
+- **HRKit**: plataforma de gestión de recursos humanos — licencias, clima laboral, onboarding y muro de reconocimientos
+- **Prode corporativo**: sistema de entretenimiento interno para eventos de empresa (usado en el Mundial 2022 por empresas de retail)
+- **PueriApp**: aplicación de gestión para instituciones educativas
+
+## Resultados reales
+
+- +500 horas ahorradas en tareas manuales
+- +240 empleados alcanzados con nuestras herramientas
+- +12 meses de relación promedio con cada cliente
+- +6 empresas activas
+
+## Cómo trabajamos
+
+1. **Diagnóstico gratis**: analizamos el problema sin costo ni compromiso y entregamos un diagnóstico claro
+2. **Propuesta a medida**: solución concreta con alcance y precio adaptado al presupuesto
+3. **Implementación**: construimos y acompañamos después de la entrega
+
+## Contacto
+
+- Email: bdallago01@gmail.com
+- WhatsApp: +54 341 628-9453
+- Web: https://voltio-landing.vercel.app
+- Reunión: https://calendly.com/voltio (Google Meet, 30 minutos, sin compromiso)
