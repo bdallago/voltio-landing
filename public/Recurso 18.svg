@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.78 266.53">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-style: italic;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        font-family: Loretta-MediumItalic, Loretta;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        font-family: Loretta-SemiBoldItalic, Loretta;
+        font-weight: 600;
+      }
+
+      .cls-2, .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        font-size: 86.12px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-9, .cls-7, .cls-10, .cls-11, .cls-6, .cls-12, .cls-13, .cls-14 {
+        font-family: Loretta-Regular, Loretta;
+      }
+
+      .cls-15 {
+        fill: #01595a;
+      }
+
+      .cls-16 {
+        fill: #01595a;
+      }
+
+      .cls-17 {
+        font-size: 62.21px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <text class="cls-15" transform="translate(0 182.22)"><tspan class="cls-17"><tspan class="cls-6" x="0" y="0">*La f</tspan><tspan class="cls-9" x="125.04" y="0">u</tspan><tspan class="cls-13" x="158.08" y="0">erza q</tspan><tspan class="cls-9" x="312.42" y="0">u</tspan><tspan class="cls-13" x="345.45" y="0">e </tspan><tspan class="cls-4" x="387.26" y="0">m</tspan><tspan class="cls-1" x="437.9" y="0">u</tspan><tspan class="cls-3" x="471.12" y="0">e</tspan><tspan class="cls-5" x="497.93" y="0">v</tspan><tspan class="cls-1" x="528.66" y="0">e</tspan></tspan><tspan class="cls-8"><tspan class="cls-2" x="181.78" y="64.59">tu</tspan><tspan class="cls-7" x="260.15" y="64.59"> </tspan><tspan class="cls-11" x="276.34" y="64.59">n</tspan><tspan class="cls-7" x="324.48" y="64.59">e</tspan><tspan class="cls-12" x="366.16" y="64.59">g</tspan><tspan class="cls-7" x="403.02" y="64.59">oc</tspan><tspan class="cls-10" x="489.23" y="64.59">i</tspan><tspan class="cls-14" x="510.58" y="64.59">o</tspan></tspan></text>
+      <g>
+        <path class="cls-16" d="M31.76,8.26l28.07,73.5L87.77,8.26h16.74l-35.86,94.01h-18.25L14.52,8.26h17.24Z"/>
+        <path class="cls-16" d="M197.12,55.33c0,30.21-18.62,48.2-44.8,48.2s-44.68-18-44.68-48.2S126.27,7,152.33,7s44.8,18,44.8,48.33ZM124.39,55.33c0,21.52,12.83,32.97,27.94,32.97s28.06-11.45,28.06-32.97-12.96-32.98-28.06-32.98-27.94,11.33-27.94,32.98Z"/>
+        <path class="cls-16" d="M229.71,8.26v78.65h45.81v15.35h-62.04V8.26h16.24Z"/>
+        <path class="cls-16" d="M342.22,8.26v15.35h-29.7v78.66h-16.24V23.61h-29.57v-15.35h75.51Z"/>
+        <path class="cls-16" d="M371.03,8.26v94.01h-16.24V8.26h16.24Z"/>
+        <path class="cls-16" d="M432.07,7c-26.05,0-44.68,18-44.68,48.33s18.63,48.2,44.68,48.2,44.8-18,44.8-48.2-18.62-48.33-44.8-48.33ZM411.31,97.43c-.29-3.82-.46-12.78,4.46-22.55,4.9-9.74,12.18-14.94,15.42-16.99-12.26-.33-24.51-.66-36.77-.99,18.59-14.6,37.17-29.2,55.76-43.8.79,3.31,2.59,12.83-1.82,23.57-3.92,9.55-10.62,14.84-13.48,16.86,11.65.27,23.31.55,34.96.82-19.51,14.36-39.02,28.72-58.52,43.08Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
