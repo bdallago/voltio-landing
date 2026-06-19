@@ -79,6 +79,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/jdx5axp.css">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79014DVS52"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79014DVS52');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x90ultkqco");
+  </script>
 </head>
 <body class="page--sub">
   <header class="nav nav--solid">
@@ -106,12 +124,14 @@
         <p class="productos__intro reveal">Software que ya construimos y están en uso en empresas como la tuya.</p>
         <div class="productos__grid">
           <article class="producto reveal" id="prode">
-            <span class="producto__badge producto__badge--otros">Otros productos</span>
+            <span class="producto__badge producto__badge--disp">Activo</span>
             <h3>Prode corporativo</h3>
             <p>Prode corporativo para el Mundial de fútbol 2026. Panel de gestión y monitoreo para RRHH con métricas y kits de comunicación.</p>
+            <p class="producto__precio">$3.000 <span>/ usuario</span></p>
+            <a href="proder.html" class="btn btn--calma producto__ver-mas">Ver producto</a>
           </article>
           <article class="producto reveal" id="hrkit">
-            <span class="producto__badge producto__badge--disp">Disponible</span>
+            <span class="producto__badge producto__badge--dev">En desarrollo</span>
             <h3>HRKit</h3>
             <p>Sistema de gestión para RRHH con funciones cruciales: panel de gestión de licencias, monitoreo de clima organizacional, encuestas anónimas, procesos de on-boarding y muro de reconocimientos.</p>
           </article>
@@ -161,5 +181,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script defer src="js/analytics.js"></script>
+  <script defer src="js/utm.js"></script>
 </body>
 </html>

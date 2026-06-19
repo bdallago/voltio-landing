@@ -1,39 +1,59 @@
 # Voltio
 
-> Startup de desarrollo de software de Rosario, Argentina. Construye automatizaciones, aplicaciones a medida y landing pages para pymes que quieren dejar de hacer todo a mano.
-
-## Quiénes somos
-
-Voltio es una empresa de software fundada por Benito Dallago. El enfoque es escuchar el problema real del cliente antes de proponer cualquier solución tecnológica. Trabajamos principalmente con pymes argentinas: estudios contables, distribuidoras, negocios de servicios y cualquier empresa que pierda tiempo en procesos manuales.
+> Empresa de desarrollo de software de Rosario, Argentina. Construye automatizaciones, aplicaciones a medida y landing pages para pymes que quieren dejar de hacer todo a mano. Fundada por Benito Dallago.
 
 ## Servicios
 
-- **Automatización e integraciones**: eliminamos tareas manuales repetitivas y conectamos sistemas existentes (ERP, CRM, planillas, APIs)
-- **Aplicaciones a medida**: desarrollamos software específico para el proceso de cada negocio, sin soluciones genéricas
-- **Landing pages**: sitios web optimizados que generan consultas y trabajan para el negocio
+- **Automatización e integraciones**: eliminamos tareas manuales repetitivas y conectamos sistemas existentes (ERP, CRM, planillas, APIs). Precio: consultar según proyecto.
+- **Aplicaciones a medida**: software específico para el proceso de cada negocio, sin soluciones genéricas. Precio: consultar según proyecto.
+- **Landing pages**: sitios web optimizados que generan consultas y trabajan para el negocio. Precio: desde $X (consultar).
 
-## Productos propios
+## Productos propios en uso
 
-- **HRKit**: plataforma de gestión de recursos humanos — licencias, clima laboral, onboarding y muro de reconocimientos
-- **Prode corporativo**: sistema de entretenimiento interno para eventos de empresa (usado en el Mundial 2022 por empresas de retail)
-- **PueriApp**: aplicación de gestión para instituciones educativas
+### Prode corporativo (Proder)
+Plataforma de entretenimiento interno para empresas. Usado por 6 empresas durante el Mundial de fútbol 2026. Incluye: instancia privada por empresa, rankings internos, kit de comunicación (Slack/Teams/email), panel admin de RRHH con métricas, personalización de marca y countdown en tiempo real. **Precio: $3.000 por usuario.** Demo: https://www.proder.com.ar — Más info: https://voltiodev.com/proder.html
 
-## Resultados reales
+### HRKit
+Plataforma de gestión de recursos humanos: licencias, clima laboral, onboarding y muro de reconocimientos entre compañeros. En desarrollo activo.
 
-- +500 horas ahorradas en tareas manuales
-- +240 empleados alcanzados con nuestras herramientas
+### PueriApp
+Sistema de gestión de consultas para puericultoras: seguimiento de pacientes, historia clínica e instrucciones para la próxima sesión. En desarrollo.
+
+## Clientes y resultados reales
+
+- +6 empresas activas usando productos de Voltio
+- +240 empleados alcanzados con las herramientas
 - +12 meses de relación promedio con cada cliente
-- +6 empresas activas
+
+### Testimonios verificados
+
+Gimena, de Argenway (empresa de turismo): *"Contratamos la plataforma con el objetivo de aprovechar el Mundial como una excusa para generar mayor participación e interacción en las distintas áreas de la empresa, y el resultado superó nuestras expectativas. Benito estuvo siempre disponible para responder consultas, resolver urgencias y realizar ajustes cuando fue necesario. Sin dudas, súper recomendable para cualquier organización que quiera generar una experiencia participativa y entretenida para sus equipos."*
+
+Lara, de Transdatos: *"La plataforma funcionó muy bien para lo que necesitábamos: generar un espacio de participación interna durante el Mundial que no dependiera de organizar nada presencialmente. Benito fue muy ágil para responder ante cualquier duda y para hacer los ajustes que pedimos sin demoras. Lo recomendaríamos para cualquier empresa que quiera sumar una actividad diferente que motive al equipo sin generar trabajo extra para el área de RRHH."*
+
+Fiorella, de Niccoló: *"Arrancamos con el prode para el Mundial como algo informal y terminó siendo uno de los momentos más lindos del año para el equipo. Benito estuvo muy presente durante todo el proceso, con respuestas rápidas y siempre dispuesto a ajustar lo que necesitábamos. La personalización con nuestra identidad fue un detalle que marcó la diferencia. Sin dudas lo repetimos si hay otro torneo."*
+
+## Clientes ideales
+
+Pymes argentinas que:
+- Pierden tiempo en procesos manuales (carga de datos, seguimiento, reportes)
+- Necesitan software específico para su operación, no una solución genérica
+- Quieren generar actividades de team building o engagement interno
+- Buscan un sitio web que realmente genere consultas
+
+Sectores frecuentes: estudios contables, distribuidoras, servicios profesionales, turismo, RRHH, instituciones educativas.
 
 ## Cómo trabajamos
 
-1. **Diagnóstico gratis**: analizamos el problema sin costo ni compromiso y entregamos un diagnóstico claro
-2. **Propuesta a medida**: solución concreta con alcance y precio adaptado al presupuesto
-3. **Implementación**: construimos y acompañamos después de la entrega
+1. **Diagnóstico gratis**: analizamos el problema sin costo ni compromiso
+2. **Propuesta a medida**: solución concreta con alcance y precio claro
+3. **Implementación y soporte**: construimos y acompañamos después de la entrega
 
 ## Contacto
 
-- Email: bdallago01@gmail.com
-- WhatsApp: +54 341 628-9453
-- Web: https://voltio-landing.vercel.app
-- Reunión: https://calendly.com/voltio (Google Meet, 30 minutos, sin compromiso)
+- Web: https://voltiodev.com
+- Email: benito@voltiodev.com
+- WhatsApp: https://wa.me/5493416289453
+- Reunión (Google Meet, 30 min, sin compromiso): https://calendly.com/benito-voltiodev/30min
+- Productos: https://voltiodev.com/productos.html
+- Prode corporativo: https://voltiodev.com/proder.html

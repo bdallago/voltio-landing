@@ -139,7 +139,6 @@ a { color: inherit; }
 .nav--solid {
   position: static;
   background: var(--idea);
-  border-bottom: 1px solid var(--aqua-claro);
 }
 .page--sub main { padding-top: 1.5rem; }
 .sobre__cta { margin-top: 1.6rem; }
@@ -441,6 +440,25 @@ a { color: inherit; }
 .producto__badge--disp  { background: var(--fuerza); }
 .producto__badge--dev   { background: var(--calma); }
 .producto__badge--otros { background: var(--teal-apagado); }
+.producto__precio {
+  font-family: var(--font-botones);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--calma);
+  margin-top: 1rem;
+  text-align: center;
+}
+.producto__precio span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.producto__ver-mas {
+  margin-top: 1.2rem;
+  align-self: center;
+  font-size: 0.9rem;
+  padding: 0.6em 1.5em;
+}
 @media (max-width: 768px) {
   .productos__grid { grid-template-columns: 1fr; }
 }
@@ -473,6 +491,16 @@ a { color: inherit; }
   font-weight: 600;
   font-size: 0.85rem;
   color: var(--idea);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+.testimonio figcaption img {
+  height: 22px;
+  width: auto;
+  opacity: 0.85;
+  flex-shrink: 0;
 }
 
 /* ---------- Contacto ---------- */

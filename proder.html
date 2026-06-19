@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prode corporativo — Voltio</title>
+  <meta name="description" content="Prode corporativo para el Mundial 2026. Gamificación interna, panel de RRHH, personalización de marca y kit de comunicación listo para usar.">
+  <link rel="canonical" href="https://voltiodev.com/proder.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://voltiodev.com/proder.html">
+  <meta property="og:title" content="Prode corporativo — Voltio">
+  <meta property="og:description" content="Gamificación interna para el Mundial 2026. Panel de RRHH, personalización de marca y kit de comunicación listo para usar.">
+  <meta property="og:image" content="https://voltiodev.com/public/Logo%2Bslogan.png">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Voltio">
+
+  <link rel="icon" type="image/png" href="assets/logos/Recurso 10.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jdx5axp.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79014DVS52"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79014DVS52');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x90ultkqco");
+  </script>
+  <style>
+    /* ---- Proder page — fondo crema, textos calma ---- */
+    .proder-hero {
+      background: var(--idea);
+      padding: 7rem 0 4rem;
+    }
+    .proder-hero__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+    .proder-hero__badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .proder-hero__badge {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3em 0.9em;
+      border-radius: 999px;
+      background: var(--fuerza);
+      color: var(--idea);
+    }
+    .proder-hero__badge--ghost {
+      background: transparent;
+      border: 1.5px solid rgba(1,89,90,0.3);
+      color: var(--calma);
+    }
+    .proder-hero__titulo {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--calma);
+      max-width: 14ch;
+    }
+    .proder-hero__tagline {
+      font-family: var(--font-textos);
+      font-style: italic;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      color: var(--teal-medio);
+      max-width: 44ch;
+    }
+    .proder-hero__acciones {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .proder-hero__stat {
+      font-family: var(--font-botones);
+      font-size: 0.9rem;
+      color: var(--teal-apagado);
+    }
+    .proder-hero__stat strong {
+      color: var(--calma);
+      font-size: 1.5rem;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.15rem;
+    }
+
+    /* ---- Etiqueta de sección ---- */
+    .proder-seccion-label {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fuerza);
+      margin-bottom: 0.8rem;
+      text-align: center;
+      display: block;
+    }
+
+    /* ---- Problema ---- */
+    .proder-problema {
+      padding: 4.5rem 0;
+      background: var(--idea);
+    }
+    .proder-problema__inner { max-width: 680px; margin-inline: auto; text-align: center; }
+    .proder-problema h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 1rem;
+    }
+    .proder-problema p {
+      font-size: 1.05rem;
+      color: var(--teal-medio);
+      line-height: 1.75;
+      text-align: center;
+    }
+
+    /* ---- Features ---- */
+    .proder-features {
+      padding: 4rem 0 5rem;
+      background: var(--idea);
+    }
+    .proder-features h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .proder-features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .proder-feature {
+      background: transparent;
+      border: 1px solid rgba(1,89,90,0.15);
+      border-radius: 16px;
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      text-align: center;
+    }
+    .proder-feature h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--calma);
+    }
+    .proder-feature p {
+      font-family: var(--font-textos);
+      font-size: 0.9rem;
+      color: var(--teal-medio);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ---- Galería ---- */
+    .proder-galeria {
+      padding: 5rem 0;
+      background: var(--idea);
+    }
+    .proder-galeria h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .proder-galeria__subtitulo {
+      font-family: var(--font-textos);
+      font-style: italic;
+      color: var(--teal-apagado);
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .proder-galeria__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .proder-galeria__item {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(1,89,90,0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: zoom-in;
+    }
+    .proder-galeria__item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(1,89,90,0.15);
+    }
+    .proder-galeria__item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    /* Lightbox */
+    .proder-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2,30,30,0.92);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .proder-lightbox.abierto { display: flex; }
+    .proder-lightbox img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .proder-lightbox__cerrar {
+      position: absolute;
+      top: 1.2rem; right: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--idea);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .proder-lightbox__nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,248,229,0.1);
+      border: none;
+      color: var(--idea);
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      line-height: 1;
+    }
+    .proder-lightbox__nav--prev { left: 1rem; }
+    .proder-lightbox__nav--next { right: 1rem; }
+
+    /* ---- Testimonio ---- */
+    .proder-testimonio {
+      padding: 5rem 0;
+      background: var(--idea);
+    }
+    .proder-testimonio__inner {
+      max-width: 780px;
+      margin-inline: auto;
+    }
+    .proder-testimonio__card {
+      background: var(--calma);
+      border-radius: 24px;
+      padding: 2.8rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    .proder-testimonio__parrafo {
+      font-family: var(--font-textos);
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--idea);
+      line-height: 1.75;
+      text-align: center;
+    }
+    .proder-testimonio__parrafo + .proder-testimonio__parrafo {
+      margin-top: 1rem;
+    }
+    .proder-testimonio__firma {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .proder-testimonio__nombre {
+      font-family: var(--font-botones);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--idea);
+    }
+    .proder-testimonio__logo {
+      height: 24px;
+      width: auto;
+      opacity: 0.85;
+    }
+    .proder-testimonio__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ---- CTA final ---- */
+    .proder-cta {
+      padding: 5rem 0;
+      background: var(--idea);
+      text-align: center;
+    }
+    .proder-cta h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: var(--calma);
+      margin-bottom: 2rem;
+    }
+    .proder-cta__acciones {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn--outline-calma {
+      background: transparent;
+      border: 2px solid var(--calma);
+      color: var(--calma);
+    }
+    .btn--outline-calma:hover { background: var(--calma); color: var(--idea); }
+
+    /* ---- Carrusel de testimonios ---- */
+    .prt-carrusel { position: relative; overflow: hidden; }
+    .prt-carrusel__track { display: flex; transition: transform 0.5s ease; }
+    .prt-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+    }
+    .prt-carrusel__dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    .prt-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(1,89,90,0.25);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s;
+    }
+    .prt-dot--activo { background: var(--calma); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .proder-features__grid { grid-template-columns: 1fr; }
+      .proder-galeria__grid { grid-template-columns: repeat(2, 1fr); }
+      .proder-galeria__item img { height: 160px; }
+      .proder-hero__acciones { flex-direction: column; align-items: flex-start; }
+      .proder-testimonio__card { padding: 2rem 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .proder-galeria__grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page--sub">
+  <header class="nav nav--solid">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Voltio — inicio">
+        <img class="nav__wordmark" src="assets/logos/Voltio Calma.png" alt="Voltio">
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#opiniones">Clientes</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Sobre nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="proder-hero">
+      <div class="container proder-hero__inner">
+<h1 class="proder-hero__titulo">Prode corporativo</h1>
+        <p class="proder-hero__tagline">El prode del Mundial como actividad de empresa. Listo para entrar y jugar.</p>
+        <div class="proder-hero__acciones">
+          <a href="https://www.proder.com.ar" target="_blank" rel="noopener" class="btn btn--fuerza">Ver demo en vivo</a>
+          <a href="index.html#contacto" class="btn btn--calma" style="background:rgba(255,248,229,0.12); color:var(--idea); border: 1.5px solid rgba(255,248,229,0.3);">Quiero esto para mi empresa</a>
+        </div>
+        <div style="display:flex; gap:2.5rem; margin-top:2rem; flex-wrap:wrap;">
+          <div class="proder-hero__stat"><strong>6</strong>empresas activas</div>
+          <div class="proder-hero__stat"><strong>$3.000</strong>por usuario</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="proder-problema">
+      <div class="container">
+        <div class="proder-problema__inner reveal">
+          <p class="proder-seccion-label">El problema</p>
+          <h2>Los equipos necesitan excusas para conectarse</h2>
+          <p>Los líderes de RRHH buscan actividades de team building que no requieran logística compleja ni presupuesto enorme. El Mundial es el momento perfecto: todos ya están pendientes, solo falta un lugar común para canalizar ese entusiasmo dentro de la empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="proder-features">
+      <div class="container">
+        <h2 class="reveal">Qué incluye</h2>
+        <div class="proder-features__grid">
+          <div class="proder-feature reveal">
+            <h3>Instancia por empresa</h3>
+            <p>Cada organización tiene su propio entorno privado, con su identidad visual y sus participantes.</p>
+          </div>
+          <div class="proder-feature reveal">
+            <h3>Rankings internos</h3>
+            <p>Tabla de posiciones exclusiva para los empleados de cada empresa. La competencia es entre colegas.</p>
+          </div>
+          <div class="proder-feature reveal">
+            <h3>Kit de comunicación</h3>
+            <p>Mensajes preformateados para Slack, Teams o email. Con un clic, el equipo de RRHH invita a todos.</p>
+          </div>
+          <div class="proder-feature reveal">
+            <h3>Panel admin de RRHH</h3>
+            <p>Métricas de participación, gestión de torneos y control de usuarios desde un panel dedicado.</p>
+          </div>
+          <div class="proder-feature reveal">
+            <h3>Personalización de marca</h3>
+            <p>Logo, colores y mensajes de bienvenida adaptados a la identidad de cada empresa.</p>
+          </div>
+          <div class="proder-feature reveal">
+            <h3>Countdown en tiempo real</h3>
+            <p>Contador regresivo hacia cada partido que genera urgencia y mantiene el engagement durante todo el torneo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="proder-galeria">
+      <div class="container">
+        <p class="proder-seccion-label">Capturas del producto</p>
+        <h2 class="reveal">Así se ve por dentro</h2>
+        <p class="proder-galeria__subtitulo reveal">Vista de empleado y panel de administración de RRHH.</p>
+        <div class="proder-galeria__grid">
+          <div class="proder-galeria__item reveal" data-idx="0">
+            <img src="public/img/proder/01-index.png" alt="Pantalla de ingreso con login" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="1">
+            <img src="public/img/proder/02-index.png" alt="Instrucciones de funcionamiento" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="2">
+            <img src="public/img/proder/07-homeN.png" alt="Home con branding personalizado" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="3">
+            <img src="public/img/proder/08-rulesN.png" alt="Reglas con identidad de empresa" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="4">
+            <img src="public/img/proder/09-rulesN.png" alt="Sistema de puntos personalizado" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="5">
+            <img src="public/img/proder/10-predictionsN.png" alt="Vista de predicciones" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="6">
+            <img src="public/img/proder/11-rankingN.png" alt="Ranking interno de empleados" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="7">
+            <img src="public/img/proder/12-rankingN.png" alt="Detalle de posiciones" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="8">
+            <img src="public/img/proder/13-adminN.png" alt="Panel RRHH — métricas" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="9">
+            <img src="public/img/proder/14-adminN.png" alt="Panel RRHH — estadísticas" loading="lazy">
+          </div>
+          <div class="proder-galeria__item reveal" data-idx="10">
+            <img src="public/img/proder/15-adminN.png" alt="Kit de comunicación" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="proder-lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button class="proder-lightbox__cerrar" id="lb-cerrar" aria-label="Cerrar">×</button>
+      <button class="proder-lightbox__nav proder-lightbox__nav--prev" id="lb-prev" aria-label="Anterior">‹</button>
+      <img id="lb-img" src="" alt="">
+      <button class="proder-lightbox__nav proder-lightbox__nav--next" id="lb-next" aria-label="Siguiente">›</button>
+    </div>
+
+    <!-- TESTIMONIOS CARRUSEL -->
+    <section class="proder-testimonio">
+      <div class="container">
+        <div class="proder-testimonio__inner">
+          <p class="proder-seccion-label" style="color:var(--calma); margin-bottom:1.5rem;">Lo que dicen nuestros clientes</p>
+          <div class="prt-carrusel" id="prt-carrusel" aria-live="polite">
+            <div class="prt-carrusel__track">
+
+              <div class="proder-testimonio__card prt-slide">
+                <div>
+                  <p class="proder-testimonio__parrafo">«Excelente trabajo! Contratamos la plataforma con el objetivo de aprovechar el Mundial como una excusa para generar mayor participación e interacción en las distintas áreas de la empresa, y el resultado superó nuestras expectativas!</p>
+                  <p class="proder-testimonio__parrafo">El sistema ofrece múltiples formas de sumar puntos, lo que mantiene el interés y el entusiasmo de los participantes durante toda la competencia. Benito estuvo siempre disponible para responder consultas, resolver urgencias y realizar ajustes cuando fue necesario. Destaco especialmente su predisposición para implementar mejoras y funcionalidades que incluso no estaban contempladas inicialmente, pero que terminaron aportando mucho valor a la experiencia general.</p>
+                  <p class="proder-testimonio__parrafo">Se nota su compromiso, dedicación e interés por brindar un servicio de calidad! Sin dudas, súper recomendable para cualquier organización que quiera generar una experiencia participativa y entretenida para sus equipos.»</p>
+                </div>
+                <div class="proder-testimonio__firma">
+                  <span class="proder-testimonio__nombre">Gimena — Argenway</span>
+                  <img class="proder-testimonio__logo" src="public/argenway-negativo.png" alt="Argenway">
+                </div>
+              </div>
+
+              <div class="proder-testimonio__card prt-slide">
+                <div>
+                  <p class="proder-testimonio__parrafo">«La plataforma funcionó muy bien para lo que necesitábamos: generar un espacio de participación interna durante el Mundial que no dependiera de organizar nada presencialmente. La verdad es que fue sencillo desde el primer momento — los compañeros entraron solos, sin necesidad de explicaciones.</p>
+                  <p class="proder-testimonio__parrafo">Benito fue muy ágil para responder ante cualquier duda y para hacer los ajustes que pedimos sin demoras. Se nota que está comprometido con que la experiencia funcione bien de verdad, no solo en el papel.</p>
+                  <p class="proder-testimonio__parrafo">Lo recomendaríamos para cualquier empresa que quiera sumar una actividad diferente que motive al equipo sin generar trabajo extra para el área de RRHH.»</p>
+                </div>
+                <div class="proder-testimonio__firma">
+                  <span class="proder-testimonio__nombre">Lara — Transdatos</span>
+                  <img class="proder-testimonio__logo" src="public/transdatos.png" alt="Transdatos">
+                </div>
+              </div>
+
+              <div class="proder-testimonio__card prt-slide">
+                <div>
+                  <p class="proder-testimonio__parrafo">«Arrancamos con el prode para el Mundial como algo informal y terminó siendo uno de los momentos más lindos del año para el equipo. Lo que más valoramos fue lo fácil que fue para todos los participantes: no hubo que explicar nada, se sumaron solos desde el primer día.</p>
+                  <p class="proder-testimonio__parrafo">Benito estuvo muy presente durante todo el proceso, con respuestas rápidas y siempre dispuesto a ajustar lo que necesitábamos. La personalización con nuestra identidad fue un detalle que marcó la diferencia.</p>
+                  <p class="proder-testimonio__parrafo">Sin dudas lo repetimos si hay otro torneo. Es una manera muy fácil de generar algo especial para el equipo sin depender de organizaciones complejas.»</p>
+                </div>
+                <div class="proder-testimonio__firma">
+                  <span class="proder-testimonio__nombre">Fiorella — Niccoló</span>
+                  <img class="proder-testimonio__logo" src="public/niccolo.png" alt="Niccoló">
+                </div>
+              </div>
+
+            </div>
+            <div class="prt-carrusel__dots" role="tablist" aria-label="Testimonios"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="proder-cta">
+      <div class="container">
+        <p class="proder-seccion-label" style="text-align:center;">¿Te interesa?</p>
+        <h2 class="reveal">Hablemos sobre tu empresa</h2>
+        <div class="proder-cta__acciones reveal">
+          <a href="index.html#contacto" class="btn btn--calma">Contactar a Voltio</a>
+          <a href="https://www.proder.com.ar" target="_blank" rel="noopener" class="btn btn--outline-calma">Ver demo en vivo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <h4>Voltio</h4>
+        <a href="nosotros.html">Sobre nosotros</a>
+        <a href="index.html#como-trabajamos">Cómo trabajamos</a>
+        <a href="index.html#opiniones">Clientes</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:bdallago01@gmail.com">Email</a>
+        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="index.html#contacto">Diagnóstico gratis</a>
+      </div>
+      <div class="footer__col">
+        <h4>Productos</h4>
+        <a href="productos.html">Todos los productos</a>
+        <a href="productos.html#hrkit">HRKit</a>
+        <a href="proder.html">Prode corporativo</a>
+        <a href="productos.html#pueriapp">PueriApp</a>
+      </div>
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__marca">
+        <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
+        <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
+      </div>
+      <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script defer src="js/analytics.js"></script>
+  <script defer src="js/utm.js"></script>
+  <script>
+    // Lightbox
+    const items = document.querySelectorAll('.proder-galeria__item');
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const imgs = Array.from(items).map(el => ({ src: el.querySelector('img').src, alt: el.querySelector('img').alt }));
+    let current = 0;
+
+    function abrirLightbox(idx) {
+      current = idx;
+      lbImg.src = imgs[idx].src;
+      lbImg.alt = imgs[idx].alt;
+      lightbox.classList.add('abierto');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarLightbox() {
+      lightbox.classList.remove('abierto');
+      document.body.style.overflow = '';
+    }
+    function navegar(dir) {
+      current = (current + dir + imgs.length) % imgs.length;
+      lbImg.src = imgs[current].src;
+      lbImg.alt = imgs[current].alt;
+    }
+
+    items.forEach((el, i) => el.addEventListener('click', () => abrirLightbox(i)));
+    document.getElementById('lb-cerrar').addEventListener('click', cerrarLightbox);
+    document.getElementById('lb-prev').addEventListener('click', () => navegar(-1));
+    document.getElementById('lb-next').addEventListener('click', () => navegar(1));
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) cerrarLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('abierto')) return;
+      if (e.key === 'Escape') cerrarLightbox();
+      if (e.key === 'ArrowLeft') navegar(-1);
+      if (e.key === 'ArrowRight') navegar(1);
+    });
+  </script>
+  <script>
+    // Carrusel de testimonios con auto-avance cada 10s
+    (function () {
+      var track  = document.querySelector('.prt-carrusel__track');
+      var slides = document.querySelectorAll('.prt-slide');
+      var dotsEl = document.querySelector('.prt-carrusel__dots');
+      if (!track || !slides.length) return;
+
+      var current = 0;
+      var total   = slides.length;
+      var timer;
+
+      // Crear dots
+      slides.forEach(function (_, i) {
+        var btn = document.createElement('button');
+        btn.className = 'prt-dot' + (i === 0 ? ' prt-dot--activo' : '');
+        btn.setAttribute('role', 'tab');
+        btn.setAttribute('aria-label', 'Testimonio ' + (i + 1));
+        btn.addEventListener('click', function () { irA(i); reiniciarTimer(); });
+        dotsEl.appendChild(btn);
+      });
+
+      function irA(idx) {
+        current = (idx + total) % total;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        document.querySelectorAll('.prt-dot').forEach(function (d, i) {
+          d.classList.toggle('prt-dot--activo', i === current);
+        });
+      }
+
+      function siguiente() { irA(current + 1); }
+
+      function reiniciarTimer() {
+        clearInterval(timer);
+        timer = setInterval(siguiente, 10000);
+      }
+
+      // Pausar al hacer hover
+      track.parentElement.addEventListener('mouseenter', function () { clearInterval(timer); });
+      track.parentElement.addEventListener('mouseleave', reiniciarTimer);
+
+      reiniciarTimer();
+    })();
+  </script>
+</body>
+</html>
