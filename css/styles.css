@@ -717,6 +717,7 @@ a { color: inherit; }
   color: var(--teal-apagado);
   margin-top: 0.35rem;
   line-height: 1.4;
+  text-align: right;
 }
 .tunel__lado:not(.tunel__lado--izq) p {
   font-size: 0.85rem;
