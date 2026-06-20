@@ -499,6 +499,8 @@ a { color: inherit; }
 .testimonio figcaption img {
   height: 22px;
   width: auto;
+  max-width: 90px;
+  object-fit: contain;
   opacity: 0.85;
   flex-shrink: 0;
 }
