@@ -711,6 +711,20 @@ a { color: inherit; }
   background: var(--calma);
 }
 
+/* Subtexto descriptivo dentro de cada celda del túnel */
+.tunel__lado--izq p {
+  font-size: 0.8rem;
+  color: var(--teal-apagado);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+.tunel__lado:not(.tunel__lado--izq) p {
+  font-size: 0.85rem;
+  color: var(--teal-medio);
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
 /* Barra central */
 .tunel__stat {
   background: var(--calma);
