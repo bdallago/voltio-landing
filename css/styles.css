@@ -327,9 +327,6 @@ a { color: inherit; }
 }
 .sobre__texto p { margin-bottom: 1rem; max-width: 48ch; text-align: justify; }
 .sobre__titulo { margin-bottom: 1.5rem; }
-.sobre__sub { margin-top: 1.8rem; margin-bottom: 0.5rem; font-size: 1.15rem; }
-.sobre__texto a { color: var(--fuerza); text-decoration: underline; text-underline-offset: 2px; }
-.sobre__links { font-size: 0.95rem; }
 /* El "Sobre nosotros" alinea con el texto; el rayito sobresale a la izquierda */
 .sobre__titulo-img { width: min(360px, 80%); height: auto; display: block; margin-left: -2.7rem; }
 .sobre__ilustracion img { width: min(420px, 100%); height: auto; border-radius: 1rem; margin-inline: auto; }
