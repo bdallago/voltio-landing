@@ -26,4 +26,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://voltiodev.com/sitemap.xml
+Sitemap: https://www.voltiodev.com/sitemap.xml
