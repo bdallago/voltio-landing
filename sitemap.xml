@@ -10,20 +10,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.voltiodev.com/automatizacion-pymes-argentina.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.voltiodev.com/automatizacion-pymes-argentina.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.voltiodev.com/en/automate-smb-tasks-argentina.html"/>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.voltiodev.com/en/automate-smb-tasks-argentina.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.voltiodev.com/productos.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.voltiodev.com/productos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.voltiodev.com/en/productos.html"/>
