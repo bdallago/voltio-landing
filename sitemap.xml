@@ -1,27 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://voltiodev.com/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://voltiodev.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voltiodev.com/en/index.html"/>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://voltiodev.com/productos.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://voltiodev.com/productos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voltiodev.com/en/productos.html"/>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://voltiodev.com/proder.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://voltiodev.com/proder.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voltiodev.com/en/proder.html"/>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://voltiodev.com/nosotros.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://voltiodev.com/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voltiodev.com/en/nosotros.html"/>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voltiodev.com/en/index.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://voltiodev.com/en/productos.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voltiodev.com/en/proder.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voltiodev.com/en/nosotros.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

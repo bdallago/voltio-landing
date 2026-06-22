@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us — Voltio</title>
-  <meta name="description" content="Voltio is a software startup founded by Benito Dallago in Rosario, Argentina. We listen to your problem, design the solution and stay with you.">
+  <meta name="description" content="Voltio is a software studio founded by Benito Dal Lago in Rosario, Argentina. We listen to your problem, design the solution and stay with you.">
   <link rel="canonical" href="https://voltiodev.com/en/nosotros.html">
 
   <!-- hreflang -->
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://voltiodev.com/en/nosotros.html">
   <meta property="og:title" content="About us — Voltio">
-  <meta property="og:description" content="Voltio is a software startup founded by Benito Dallago. We listen to your problem, design the solution and stay with you.">
+  <meta property="og:description" content="Voltio is a software studio founded by Benito Dal Lago. We listen to your problem, design the solution and stay with you.">
   <meta property="og:image" content="https://voltiodev.com/public/Logo%2Bslogan.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Voltio">
@@ -23,7 +23,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About us — Voltio">
-  <meta name="twitter:description" content="Voltio is a software startup founded by Benito Dallago. We listen to your problem, design the solution and stay with you.">
+  <meta name="twitter:description" content="Voltio is a software studio founded by Benito Dal Lago. We listen to your problem, design the solution and stay with you.">
   <meta name="twitter:image" content="https://voltiodev.com/public/Logo%2Bslogan.png">
 
   <!-- JSON-LD -->
@@ -33,20 +33,24 @@
     "@type": "AboutPage",
     "url": "https://voltiodev.com/en/nosotros.html",
     "name": "About us — Voltio",
-    "description": "Meet Voltio and Benito Dallago, the developer behind the startup.",
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://voltiodev.com/#organization",
-      "name": "Voltio",
-      "url": "https://voltiodev.com"
-    },
-    "about": {
+    "description": "Meet Voltio and Benito Dal Lago, the developer behind the studio.",
+    "publisher": { "@id": "https://voltiodev.com/#organization" },
+    "mainEntity": {
       "@type": "Person",
-      "name": "Benito Dallago",
+      "@id": "https://voltiodev.com/#founder",
+      "name": "Benito Dal Lago",
+      "alternateName": ["Beno", "Benito Dallago"],
       "jobTitle": "Founder and developer",
       "worksFor": { "@id": "https://voltiodev.com/#organization" },
-      "email": "bdallago01@gmail.com",
-      "telephone": "+54-341-628-9453"
+      "url": "https://www.imbeno.dev/",
+      "email": "benito@voltiodev.com",
+      "telephone": "+54-341-628-9453",
+      "knowsAbout": ["Next.js", "TypeScript", "Process automation", "Custom software development", "Web apps for SMBs", "SEO"],
+      "sameAs": [
+        "https://www.imbeno.dev/",
+        "https://www.linkedin.com/in/benito-dal-lago/",
+        "https://github.com/bdallago"
+      ]
     }
   }
   </script>
@@ -85,9 +89,21 @@
           <h2 class="sobre__titulo">
             <img class="sobre__titulo-img" src="../public/Sobre nosotros.png" alt="Sobre nosotros" width="441" height="176">
           </h2>
-          <p><strong><em>Voltio</em></strong> is a software solutions startup. We know that tedious, repetitive tasks steal your time away from what really matters.</p>
+          <p><strong><em>Voltio</em></strong> is a software studio based in Rosario, Argentina. We know that tedious, repetitive tasks steal your time away from what really matters.</p>
           <p>Who can handle urgent and sensitive problems when they spend all day answering WhatsApps and emails? Who hasn't lost entire days filling out Excel spreadsheets?</p>
           <p>With Voltio, that's over. We understand your problems and want to share the solution with you: we listen to what you need, we build it, and we stay with you after delivery.</p>
+
+          <h3 class="sobre__sub">Who is behind Voltio?</h3>
+          <p>Voltio was founded by <a href="https://www.imbeno.dev/" target="_blank" rel="noopener author"><strong>Benito Dal Lago</strong></a>, a web product developer. It's not a large agency or a middleman: you talk directly with the person who builds your solution. He works with Next.js, TypeScript, Firebase and Postgres, and has already shipped products to production with real users.</p>
+
+          <h3 class="sobre__sub">Which companies has Voltio worked with?</h3>
+          <p>Voltio delivered projects for real companies such as <strong>Argenway</strong>, <strong>Transdatos</strong> and <strong>Niccoló</strong>, and builds its own products like Corporate Prode (used by 6+ companies), HRKit and PueriApp.</p>
+
+          <h3 class="sobre__sub">Why trust Voltio with a project?</h3>
+          <p>Because the risk is zero to start: first we run a <strong>free diagnosis</strong> and show you the solution. Only if you're convinced do we move forward. And after delivery, we keep supporting you.</p>
+
+          <p class="sobre__links">Learn more in <a href="https://www.imbeno.dev/" target="_blank" rel="noopener">Benito's portfolio</a> or his <a href="https://www.linkedin.com/in/benito-dal-lago/" target="_blank" rel="noopener">LinkedIn profile</a>.</p>
+
           <a href="index.html" class="btn btn--calma sobre__cta">Back to home</a>
           <a href="https://calendly.com/benito-voltiodev/30min" target="_blank" rel="noopener" class="btn btn--calma sobre__cta">Schedule a meeting</a>
         </div>
@@ -108,7 +124,7 @@
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
-        <a href="mailto:bdallago01@gmail.com">Email</a>
+        <a href="mailto:benito@voltiodev.com">Email</a>
         <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp</a>
         <a href="index.html#contacto">Free diagnosis</a>
       </div>

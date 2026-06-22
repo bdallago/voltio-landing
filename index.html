@@ -28,20 +28,23 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "ProfessionalService"],
         "@id": "https://voltiodev.com/#organization",
         "name": "Voltio",
         "alternateName": "Voltio Soluciones de Software",
-        "description": "Startup de software que construye automatizaciones, aplicaciones a medida y landing pages para pymes de Argentina.",
+        "description": "Estudio de software que construye automatizaciones, aplicaciones a medida y landing pages para pymes de Argentina. Diagnóstico gratis y acompañamiento post-entrega.",
         "url": "https://voltiodev.com",
         "logo": "https://voltiodev.com/public/Voltio%20Calma.png",
         "image": "https://voltiodev.com/public/Logo%2Bslogan.png",
         "slogan": "La fuerza que mueve tu negocio",
         "foundingDate": "2024",
-        "founder": {
-          "@type": "Person",
-          "name": "Benito Dallago",
-          "jobTitle": "Fundador y desarrollador"
+        "priceRange": "$$",
+        "founder": { "@id": "https://voltiodev.com/#founder" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rosario",
+          "addressRegion": "Santa Fe",
+          "addressCountry": "AR"
         },
         "contactPoint": {
           "@type": "ContactPoint",
@@ -50,11 +53,86 @@
           "email": "benito@voltiodev.com",
           "availableLanguage": "Spanish"
         },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Argentina"
+        "areaServed": [
+          { "@type": "City", "name": "Rosario" },
+          { "@type": "Country", "name": "Argentina" }
+        ],
+        "knowsAbout": ["Automatización de procesos", "Desarrollo de software a medida", "Landing pages", "Aplicaciones web", "Integración de sistemas", "Software de RRHH para pymes"],
+        "sameAs": [
+          "https://www.linkedin.com/in/benito-dal-lago/",
+          "https://www.imbeno.dev/",
+          "https://www.imbeno.dev/projects/voltio"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3",
+          "bestRating": "5"
         },
-        "knowsAbout": ["Automatización de procesos", "Desarrollo de software a medida", "Landing pages", "Aplicaciones web", "Integración de sistemas"]
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Gimena" },
+            "publisher": { "@type": "Organization", "name": "Argenway" },
+            "reviewBody": "Contratamos la plataforma para el Mundial y el resultado superó nuestras expectativas. El sistema mantiene el interés durante toda la competencia y Benito estuvo siempre disponible para resolver urgencias e implementar mejoras. Súper recomendable."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Lara" },
+            "publisher": { "@type": "Organization", "name": "Transdatos" },
+            "reviewBody": "La plataforma funcionó perfecto: los compañeros entraron solos, sin necesidad de explicaciones. Benito fue muy ágil para los ajustes que pedimos. Lo recomendaríamos para cualquier empresa."
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Fiorella" },
+            "publisher": { "@type": "Organization", "name": "Niccoló" },
+            "reviewBody": "Arrancamos con el prode como algo informal y terminó siendo uno de los momentos más lindos del año para el equipo. La personalización con nuestra identidad marcó la diferencia."
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://voltiodev.com/#founder",
+        "name": "Benito Dal Lago",
+        "alternateName": ["Beno", "Benito Dallago"],
+        "jobTitle": "Fundador y desarrollador",
+        "worksFor": { "@id": "https://voltiodev.com/#organization" },
+        "url": "https://www.imbeno.dev/",
+        "email": "benito@voltiodev.com",
+        "telephone": "+54-341-628-9453",
+        "knowsAbout": ["Next.js", "TypeScript", "Automatización de procesos", "Desarrollo de software a medida", "Aplicaciones web para pymes"],
+        "sameAs": [
+          "https://www.imbeno.dev/",
+          "https://www.linkedin.com/in/benito-dal-lago/",
+          "https://github.com/bdallago"
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Automatización e integraciones de procesos",
+        "serviceType": "Automatización de procesos para pymes",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "Eliminamos tareas manuales repetitivas: carga de datos, envío de mails, actualización de planillas e integración de sistemas que hoy viven separados (WhatsApp, Drive, Excel)."
+      },
+      {
+        "@type": "Service",
+        "name": "Aplicaciones a medida",
+        "serviceType": "Desarrollo de software a medida",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "Desarrollamos aplicaciones web a medida que centralizan la información de tu negocio en un solo sistema, pensadas para tu operación real."
+      },
+      {
+        "@type": "Service",
+        "name": "Landing pages que convierten",
+        "serviceType": "Diseño y desarrollo de landing pages",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "Diseñamos landing pages optimizadas para SEO y conversión, que generan consultas y hacen crecer tu marca de forma orgánica."
       },
       {
         "@type": "WebSite",
@@ -396,7 +474,7 @@
         <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
         <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
       </div>
-      <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados.</p>
+      <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados. · Fundado por <a href="https://www.imbeno.dev/" target="_blank" rel="noopener">Benito Dal Lago</a></p>
     </div>
   </footer>
 

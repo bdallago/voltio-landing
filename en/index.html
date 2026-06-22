@@ -28,33 +28,88 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "ProfessionalService"],
         "@id": "https://voltiodev.com/#organization",
         "name": "Voltio",
         "alternateName": "Voltio Software Solutions",
-        "description": "Software startup that builds automations, custom apps and landing pages for SMBs in Argentina.",
+        "description": "Software studio that builds automations, custom apps and landing pages for SMBs in Argentina. Free diagnosis and post-delivery support.",
         "url": "https://voltiodev.com",
         "logo": "https://voltiodev.com/public/Voltio%20Calma.png",
         "image": "https://voltiodev.com/public/Logo%2Bslogan.png",
         "slogan": "The force that drives your business",
         "foundingDate": "2024",
-        "founder": {
-          "@type": "Person",
-          "name": "Benito Dallago",
-          "jobTitle": "Founder and developer"
+        "priceRange": "$$",
+        "founder": { "@id": "https://voltiodev.com/#founder" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rosario",
+          "addressRegion": "Santa Fe",
+          "addressCountry": "AR"
         },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+54-341-628-9453",
           "contactType": "customer service",
           "email": "benito@voltiodev.com",
-          "availableLanguage": "Spanish"
+          "availableLanguage": ["Spanish", "English"]
         },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Argentina"
-        },
-        "knowsAbout": ["Process automation", "Custom software development", "Web presence and conversion", "Custom web applications", "Systems integration"]
+        "areaServed": [
+          { "@type": "City", "name": "Rosario" },
+          { "@type": "Country", "name": "Argentina" }
+        ],
+        "knowsAbout": ["Process automation", "Custom software development", "Landing pages", "Custom web applications", "Systems integration", "HR software for SMBs"],
+        "sameAs": [
+          "https://www.linkedin.com/in/benito-dal-lago/",
+          "https://www.imbeno.dev/",
+          "https://www.imbeno.dev/projects/voltio"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://voltiodev.com/#founder",
+        "name": "Benito Dal Lago",
+        "alternateName": ["Beno", "Benito Dallago"],
+        "jobTitle": "Founder and developer",
+        "worksFor": { "@id": "https://voltiodev.com/#organization" },
+        "url": "https://www.imbeno.dev/",
+        "email": "benito@voltiodev.com",
+        "telephone": "+54-341-628-9453",
+        "knowsAbout": ["Next.js", "TypeScript", "Process automation", "Custom software development", "Web apps for SMBs"],
+        "sameAs": [
+          "https://www.imbeno.dev/",
+          "https://www.linkedin.com/in/benito-dal-lago/",
+          "https://github.com/bdallago"
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Process automation and integrations",
+        "serviceType": "Business process automation",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "We eliminate repetitive manual tasks: data entry, sending emails, updating spreadsheets, and integrating systems that today live apart (WhatsApp, Drive, Excel)."
+      },
+      {
+        "@type": "Service",
+        "name": "Custom applications",
+        "serviceType": "Custom software development",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "We build custom web applications that centralize your business information into a single system, designed around your real operation."
+      },
+      {
+        "@type": "Service",
+        "name": "Landing pages that convert",
+        "serviceType": "Landing page design and development",
+        "provider": { "@id": "https://voltiodev.com/#organization" },
+        "areaServed": { "@type": "Country", "name": "Argentina" },
+        "description": "We design landing pages optimized for SEO and conversion that generate inquiries and grow your brand organically."
       },
       {
         "@type": "WebSite",
