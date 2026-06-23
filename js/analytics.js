@@ -6,52 +6,23 @@
   }
 
   // CTAs
-  var heroCta = document.querySelector('.hero__cta');
-  if (heroCta) heroCta.addEventListener('click', function () {
-    track('cta_click_hero');
-  });
-
-  var procesoCta = document.querySelector('.proceso__cta');
-  if (procesoCta) procesoCta.addEventListener('click', function () {
-    track('cta_click_proceso');
+  document.querySelectorAll('.hero__cta, .proceso__cta').forEach(function (el) {
+    el.addEventListener('click', function () { track('cta_click'); });
   });
 
   // WhatsApp
-  var wspBanner = document.querySelector('.btn-icono--wsp');
-  if (wspBanner) wspBanner.addEventListener('click', function () {
-    track('whatsapp_click_banner');
-  });
-
-  var wspFooter = document.querySelector('.footer__col a[href*="wa.me"]');
-  if (wspFooter) wspFooter.addEventListener('click', function () {
-    track('whatsapp_click_footer');
-  });
-
-  var wspFloat = document.querySelector('.wsp-float');
-  if (wspFloat) wspFloat.addEventListener('click', function () {
-    track('whatsapp_click_flotante');
+  document.querySelectorAll('.btn-icono--wsp, .footer__col a[href*="wa.me"], .wsp-float').forEach(function (el) {
+    el.addEventListener('click', function () { track('whatsapp_click'); });
   });
 
   // Calendly
-  var agendaBtn = document.querySelector('.agenda__btn');
-  if (agendaBtn) agendaBtn.addEventListener('click', function () {
-    track('calendly_click_agenda');
-  });
-
-  var calBanner = document.querySelector('.btn-icono--calendario');
-  if (calBanner) calBanner.addEventListener('click', function () {
-    track('calendly_click_banner');
+  document.querySelectorAll('.agenda__btn, .btn-icono--calendario').forEach(function (el) {
+    el.addEventListener('click', function () { track('calendly_click'); });
   });
 
   // Email
-  var emailBanner = document.querySelector('.btn-icono--email');
-  if (emailBanner) emailBanner.addEventListener('click', function () {
-    track('email_click_banner');
-  });
-
-  var emailFooter = document.querySelector('.footer__col a[href*="mailto"]');
-  if (emailFooter) emailFooter.addEventListener('click', function () {
-    track('email_click_footer');
+  document.querySelectorAll('.btn-icono--email, .footer__col a[href*="mailto"]').forEach(function (el) {
+    el.addEventListener('click', function () { track('email_click'); });
   });
 
   // Nav
