@@ -47,16 +47,20 @@ Módulos efectivamente construidos y en prod (según memorias del proyecto HRKit
 
 ## Posicionamiento (de las validaciones — 7 charlas con RRHH)
 
-Cuatro banderas, en orden de fuerza:
+Tres banderas, en orden de fuerza:
 
 1. **Todo-en-uno, un solo precio** — contra la fragmentación de módulos sueltos y
    caros (Dairys, Cristian, Jordi). Es *el* mensaje central.
-2. **Reemplaza el Excel** — "todo termina en Excel" fue universal (6/7). El enemigo
-   es la planilla que solo entiende una persona y que si se va, se va con ella.
+2. **Dejá descansar al Excel** — "todo termina en Excel" fue universal (6/7). Tono
+   amable, no confrontativo: la planilla que hoy solo entiende una persona (y que si
+   se va, se va con ella) pasa a estar toda en un lugar ordenado. NO usar "reemplazá
+   el Excel" ni tono de enemigo.
 3. **UX amigable = adopción** — convenciones tipo home-banking / red social
    (Agustín + la jefa de RRHH que cita Beno). Se dice explícitamente.
-4. **No califica personas** — diferencial ético (se sacó el predictor). "Registra y
-   ordena, no le pone puntaje a la gente."
+
+Nota: NO usar "no califica personas" como bandera de venta. Es implícito (ningún
+software del rubro califica gente), no es un diferencial esperado. Se puede mencionar
+al pasar en el detalle de Reportes, no como titular.
 
 Contrastes de apoyo: **nube, no atado a una PC** (Joaquín); **implementación en días,
 no en 3 meses** (contra Visma, vía Agustín).
@@ -100,8 +104,8 @@ fuente única (metadata/JSON-LD/llms.txt/llm-info se derivan solos):
   comunicaciones internas, encuestas de clima, casos de ausentismo como workflow,
   auditoría, permisos granulares, autoservicio del empleado). Tono primera persona
   rioplatense, largo desparejo, sin tics de LLM (según `CLAUDE.md` del portfolio).
-- **Afinar `summary` y `solution`** para que "todo-en-uno / un solo precio / reemplaza
-  Excel" quede explícito.
+- **Afinar `summary` y `solution`** para que "todo-en-uno / un solo precio / dejá
+  descansar al Excel" quede explícito (tono amable, no "reemplazá el Excel").
 - `screenshots` / `allScreenshots`: **se dejan vacíos** (capturas después).
 - No tocar nada derivado.
 
@@ -113,11 +117,11 @@ fuente única (metadata/JSON-LD/llms.txt/llm-info se derivan solos):
    - **Hero**: título HRKit + tagline ("El RRHH de tu pyme, sin planillas de Excel"),
      badges (Early access · RRHH · Pymes), CTAs: "Pedir demo" (Calendly) +
      "Sumate como cliente fundador" (contacto). Stat: "Todo-en-uno · desde 3,33 USD/emp".
-   - **Problema**: el Excel fragmentado (la planilla que solo entiende una persona).
+   - **Problema**: el Excel fragmentado (la planilla que solo entiende una persona) —
+     enfoque "dejá descansar al Excel", tono amable.
    - **Todo-en-uno**: los módulos reales agrupados (Tiempo y asistencia · Licencias ·
      Documentos y recibos · Comunicación y clima · Legajos y onboarding ·
      Reportes y auditoría), en grid de features.
-   - **"No califica personas"**: bloque corto de diferencial ético.
    - **Nube + implementación rápida**: dos contrastes de apoyo.
    - **Precios**: la tabla de 4 tramos.
    - **Galería**: omitida o con placeholders hasta las capturas de Beno.
