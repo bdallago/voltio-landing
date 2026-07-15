@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- NOMBRE PROVISORIO: "HRKit" se usa como definitivo. Al fijar el nombre real,
+     buscar-y-reemplazar "HRKit" en este archivo y renombrar el archivo + en/hrkit.html. -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRKit — Software de RRHH todo-en-uno para pymes | Voltio</title>
+  <meta name="description" content="HRKit: el software de RRHH todo-en-uno para pymes. Fichaje, licencias, recibos con firma, comunicación interna y reportes en una sola app. Un plan, un solo precio.">
+  <link rel="canonical" href="https://www.voltiodev.com/hrkit.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.voltiodev.com/hrkit.html">
+  <meta property="og:title" content="HRKit — Software de RRHH todo-en-uno para pymes | Voltio">
+  <meta property="og:description" content="Fichaje, licencias, recibos con firma, comunicación interna y reportes en una sola app. Un plan, un solo precio. En early access.">
+  <meta property="og:image" content="https://www.voltiodev.com/public/Logo%2Bslogan.png">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Voltio">
+
+  <link rel="icon" type="image/png" href="assets/logos/Recurso 10.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jdx5axp.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="alternate" hreflang="es" href="https://www.voltiodev.com/hrkit.html">
+  <link rel="alternate" hreflang="en" href="https://www.voltiodev.com/en/hrkit.html">
+  <script src="js/lang-detect.js"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79014DVS52"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79014DVS52');
+    gtag('config', 'AW-18107748327');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x90ultkqco");
+  </script>
+  <style>
+    /* ---- Proder page — fondo crema, textos calma ---- */
+    .hrkit-hero {
+      background: var(--idea);
+      padding: 7rem 0 4rem;
+    }
+    .hrkit-hero__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+    .hrkit-hero__badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .hrkit-hero__badge {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3em 0.9em;
+      border-radius: 999px;
+      background: var(--fuerza);
+      color: var(--idea);
+    }
+    .hrkit-hero__badge--ghost {
+      background: transparent;
+      border: 1.5px solid rgba(1,89,90,0.3);
+      color: var(--calma);
+    }
+    .hrkit-hero__titulo {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--calma);
+      max-width: 14ch;
+    }
+    .hrkit-hero__tagline {
+      font-family: var(--font-textos);
+      font-style: italic;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      color: var(--teal-medio);
+      max-width: 44ch;
+    }
+    .hrkit-hero__acciones {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .hrkit-hero__stat {
+      font-family: var(--font-botones);
+      font-size: 0.9rem;
+      color: var(--teal-apagado);
+    }
+    .hrkit-hero__stat strong {
+      color: var(--calma);
+      font-size: 1.5rem;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.15rem;
+    }
+
+    /* ---- Etiqueta de sección ---- */
+    .hrkit-seccion-label {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fuerza);
+      margin-bottom: 0.8rem;
+      text-align: center;
+      display: block;
+    }
+
+    /* ---- Problema ---- */
+    .hrkit-problema {
+      padding: 4.5rem 0;
+      background: var(--idea);
+    }
+    .hrkit-problema__inner { max-width: 680px; margin-inline: auto; text-align: center; }
+    .hrkit-problema h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 1rem;
+    }
+    .hrkit-problema p {
+      font-size: 1.05rem;
+      color: var(--teal-medio);
+      line-height: 1.75;
+      text-align: center;
+    }
+
+    /* ---- Features ---- */
+    .hrkit-features {
+      padding: 4rem 0 5rem;
+      background: var(--idea);
+    }
+    .hrkit-features h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .hrkit-features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .hrkit-feature {
+      background: transparent;
+      border: 1px solid rgba(1,89,90,0.15);
+      border-radius: 16px;
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      text-align: center;
+    }
+    .hrkit-feature h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--calma);
+    }
+    .hrkit-feature p {
+      font-family: var(--font-textos);
+      font-size: 0.9rem;
+      color: var(--teal-medio);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ---- CTA final ---- */
+    .hrkit-cta {
+      padding: 5rem 0;
+      background: var(--idea);
+      text-align: center;
+    }
+    .hrkit-cta h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: var(--calma);
+      margin-bottom: 2rem;
+    }
+    .hrkit-cta__acciones {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn--outline-calma {
+      background: transparent;
+      border: 2px solid var(--calma);
+      color: var(--calma);
+    }
+    .btn--outline-calma:hover { background: var(--calma); color: var(--idea); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .hrkit-features__grid { grid-template-columns: 1fr; }
+      .hrkit-hero__acciones { flex-direction: column; align-items: center; }
+    }
+
+    /* ---- Precios ---- */
+    .hrkit-precios { padding: 4.5rem 0 5rem; background: var(--idea); }
+    .hrkit-precios h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: var(--calma); margin-bottom: 0.5rem; text-align: center; }
+    .hrkit-precios__intro { font-family: var(--font-textos); color: var(--teal-apagado); text-align: center; margin-bottom: 2.5rem; }
+    .hrkit-tabla { max-width: 640px; margin-inline: auto; border-collapse: collapse; width: 100%; background: transparent; }
+    .hrkit-tabla th, .hrkit-tabla td { padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid rgba(1,89,90,0.15); font-family: var(--font-botones); font-size: 0.95rem; color: var(--calma); }
+    .hrkit-tabla th { font-weight: 700; color: var(--fuerza); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.75rem; }
+    .hrkit-tabla td:last-child, .hrkit-tabla th:last-child { text-align: right; }
+    .hrkit-tabla__usd { display: block; font-size: 0.75rem; color: var(--teal-apagado); font-weight: 400; margin-top: 0.15rem; }
+    .hrkit-precios__nota { text-align: center; margin-top: 1.2rem; font-family: var(--font-textos); font-style: italic; color: var(--teal-apagado); font-size: 0.9rem; }
+  </style>
+</head>
+<body class="page--sub">
+  <header class="nav nav--solid">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Voltio — inicio">
+        <img class="nav__wordmark" src="assets/logos/Voltio Calma.png" alt="Voltio">
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#opiniones">Clientes</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Sobre nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hrkit-hero">
+      <div class="container hrkit-hero__inner">
+        <div class="hrkit-hero__badges">
+          <span class="hrkit-hero__badge">Early access</span>
+          <span class="hrkit-hero__badge hrkit-hero__badge--ghost">RRHH</span>
+          <span class="hrkit-hero__badge hrkit-hero__badge--ghost">Pymes</span>
+        </div>
+        <h1 class="hrkit-hero__titulo">HRKit</h1>
+        <p class="hrkit-hero__tagline">El RRHH de tu pyme, sin planillas sueltas. Fichaje, licencias, recibos y comunicación en una sola app.</p>
+        <div class="hrkit-hero__acciones">
+          <a href="https://calendly.com/benito-voltiodev/30min" target="_blank" rel="noopener" class="btn btn--fuerza">Pedir demo</a>
+          <a href="index.html#contacto" class="btn btn--outline-calma">Sumate como cliente fundador</a>
+        </div>
+        <div style="display:flex; gap:2.5rem; margin-top:2rem; flex-wrap:wrap; justify-content:center;">
+          <div class="hrkit-hero__stat"><strong>Todo-en-uno</strong>un solo precio</div>
+          <div class="hrkit-hero__stat"><strong>$250.000</strong>desde, por mes</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="hrkit-problema">
+      <div class="container">
+        <div class="hrkit-problema__inner reveal">
+          <p class="hrkit-seccion-label">El problema</p>
+          <h2>Tu RRHH vive repartido en planillas</h2>
+          <p>La asistencia en un Excel, las licencias en otro, los recibos en una carpeta que alguien renombró. Cuando un empleado pregunta cuántos días de vacaciones le quedan, hay que abrir tres archivos para contestarle. Y esa planilla la entiende una sola persona: el día que no está, no está el dato. HRKit junta todo en un solo lugar, ordenado y compartido, para que el Excel pueda descansar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO-EN-UNO -->
+    <section class="hrkit-features">
+      <div class="container">
+        <p class="hrkit-seccion-label">Todo-en-uno</p>
+        <h2 class="reveal">Todo el RRHH en una sola app</h2>
+        <div class="hrkit-features__grid">
+          <div class="hrkit-feature reveal">
+            <h3>Tiempo y asistencia</h3>
+            <p>Fichaje, horarios, franjas, rotación, tolerancias y feriados. El sistema sabe qué se espera de cada persona cada día, y arma la vista diaria y los reportes solo.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Licencias</h3>
+            <p>Se piden, se aprueban y quedan registradas, con plantillas para no reconfigurar lo mismo cada vez. Las licencias impactan en la asistencia automáticamente.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Documentos y recibos</h3>
+            <p>Recibos y documentos se reparten desde la app, con firma electrónica, envío por WhatsApp y constancia de que la persona los abrió.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Comunicación y clima</h3>
+            <p>Cartelera y comunicaciones internas con acuse, más encuestas de clima anónimas o identificadas.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Legajos y onboarding</h3>
+            <p>Legajo de cada persona con autoservicio: el empleado edita sus datos y RRHH aprueba los sensibles. Import masivo de tu planilla actual y onboarding de ingresos con plantillas.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Reportes y auditoría</h3>
+            <p>Asistencia por empleado, presentismo y horas trabajadas, sin exportar a otro lado. Y una auditoría legible de quién hizo qué.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIALES -->
+    <section class="hrkit-problema">
+      <div class="container">
+        <div class="hrkit-problema__inner reveal">
+          <p class="hrkit-seccion-label">Por qué HRKit</p>
+          <h2>En la nube y andando en días</h2>
+          <p>Se usa desde el navegador, en la oficina o desde casa. No hay nada que instalar ni una PC de la que dependa el sistema. Y la puesta en marcha se mide en días, no en meses: importás tu planilla actual y arrancás, sin un proyecto de implementación eterno.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="hrkit-precios">
+      <div class="container">
+        <p class="hrkit-seccion-label">Precios</p>
+        <h2 class="reveal">Un plan, todo incluido</h2>
+        <p class="hrkit-precios__intro reveal">Sin módulos que se cobran aparte. El precio es por cantidad de empleados y baja con el volumen.</p>
+        <table class="hrkit-tabla reveal">
+          <thead>
+            <tr><th>Plan</th><th>Por mes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hasta 35 empleados</td><td>$250.000 <span class="hrkit-tabla__usd">~170 USD</span></td></tr>
+            <tr><td>Hasta 90 empleados</td><td>$600.000 <span class="hrkit-tabla__usd">~400 USD</span></td></tr>
+            <tr><td>Hasta 150 empleados</td><td>$850.000 <span class="hrkit-tabla__usd">~570 USD</span></td></tr>
+            <tr><td>Hasta 200 empleados</td><td>$1.000.000 <span class="hrkit-tabla__usd">~670 USD</span></td></tr>
+          </tbody>
+        </table>
+        <p class="hrkit-precios__nota">Más de 200 empleados: plan a medida. Todos los planes incluyen todo, sin módulos aparte.</p>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="hrkit-cta">
+      <div class="container">
+        <p class="hrkit-seccion-label" style="text-align:center;">¿Te interesa?</p>
+        <h2 class="reveal">Sumate como cliente fundador</h2>
+        <div class="hrkit-cta__acciones reveal">
+          <a href="https://calendly.com/benito-voltiodev/30min" target="_blank" rel="noopener" class="btn btn--calma">Pedir demo</a>
+          <a href="index.html#contacto" class="btn btn--outline-calma">Contactar a Voltio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <h4>Voltio</h4>
+        <a href="nosotros.html">Sobre nosotros</a>
+        <a href="index.html#como-trabajamos">Cómo trabajamos</a>
+        <a href="index.html#opiniones">Clientes</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:benito@voltiodev.com">Email</a>
+        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="index.html#contacto">Diagnóstico gratis</a>
+      </div>
+      <div class="footer__col">
+        <h4>Productos</h4>
+        <a href="productos.html">Todos los productos</a>
+        <a href="hrkit.html">HRKit</a>
+        <a href="proder.html">Prode corporativo</a>
+        <a href="productos.html#pueriapp">PueriApp</a>
+      </div>
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__marca">
+        <img src="assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
+        <p class="footer__tagline">La fuerza que <em>mueve tu negocio</em></p>
+      </div>
+      <p class="footer__copy">© 2026 Voltio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script defer src="js/analytics.js"></script>
+  <script defer src="js/utm.js"></script>
+</body>
+</html>
