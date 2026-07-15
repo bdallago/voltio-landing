@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- PLACEHOLDER NAME: "HRKit" is used as the final name. When the real name is set,
+     find-and-replace "HRKit" here and rename this file + ../hrkit.html. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRKit — All-in-one HR software for small companies | Voltio</title>
+  <meta name="description" content="HRKit: the all-in-one HR software for small companies. Time tracking, leave, signed payslips, internal comms and reports in a single app. One plan, one price.">
+  <link rel="canonical" href="https://www.voltiodev.com/en/hrkit.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.voltiodev.com/en/hrkit.html">
+  <meta property="og:title" content="HRKit — All-in-one HR software for small companies | Voltio">
+  <meta property="og:description" content="Time tracking, leave, signed payslips, internal comms and reports in a single app. One plan, one price. In early access.">
+  <meta property="og:image" content="https://www.voltiodev.com/public/Logo%2Bslogan.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Voltio">
+
+  <link rel="icon" type="image/png" href="../assets/logos/Recurso 10.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jdx5axp.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="alternate" hreflang="es" href="https://www.voltiodev.com/hrkit.html">
+  <link rel="alternate" hreflang="en" href="https://www.voltiodev.com/en/hrkit.html">
+  <script src="../js/lang-detect.js"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79014DVS52"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79014DVS52');
+    gtag('config', 'AW-18107748327');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x90ultkqco");
+  </script>
+  <style>
+    /* ---- Proder page — fondo crema, textos calma ---- */
+    .hrkit-hero {
+      background: var(--idea);
+      padding: 7rem 0 4rem;
+    }
+    .hrkit-hero__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+    .hrkit-hero__badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .hrkit-hero__badge {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3em 0.9em;
+      border-radius: 999px;
+      background: var(--fuerza);
+      color: var(--idea);
+    }
+    .hrkit-hero__badge--ghost {
+      background: transparent;
+      border: 1.5px solid rgba(1,89,90,0.3);
+      color: var(--calma);
+    }
+    .hrkit-hero__titulo {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--calma);
+      max-width: 14ch;
+    }
+    .hrkit-hero__tagline {
+      font-family: var(--font-textos);
+      font-style: italic;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      color: var(--teal-medio);
+      max-width: 44ch;
+    }
+    .hrkit-hero__acciones {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .hrkit-hero__stat {
+      font-family: var(--font-botones);
+      font-size: 0.9rem;
+      color: var(--teal-apagado);
+    }
+    .hrkit-hero__stat strong {
+      color: var(--calma);
+      font-size: 1.5rem;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.15rem;
+    }
+
+    /* ---- Etiqueta de sección ---- */
+    .hrkit-seccion-label {
+      font-family: var(--font-botones);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fuerza);
+      margin-bottom: 0.8rem;
+      text-align: center;
+      display: block;
+    }
+
+    /* ---- Problema ---- */
+    .hrkit-problema {
+      padding: 4.5rem 0;
+      background: var(--idea);
+    }
+    .hrkit-problema__inner { max-width: 680px; margin-inline: auto; text-align: center; }
+    .hrkit-problema h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 1rem;
+    }
+    .hrkit-problema p {
+      font-size: 1.05rem;
+      color: var(--teal-medio);
+      line-height: 1.75;
+      text-align: center;
+    }
+
+    /* ---- Features ---- */
+    .hrkit-features {
+      padding: 4rem 0 5rem;
+      background: var(--idea);
+    }
+    .hrkit-features h2 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--calma);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .hrkit-features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .hrkit-feature {
+      background: transparent;
+      border: 1px solid rgba(1,89,90,0.15);
+      border-radius: 16px;
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      text-align: center;
+    }
+    .hrkit-feature h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--calma);
+    }
+    .hrkit-feature p {
+      font-family: var(--font-textos);
+      font-size: 0.9rem;
+      color: var(--teal-medio);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ---- CTA final ---- */
+    .hrkit-cta {
+      padding: 5rem 0;
+      background: var(--idea);
+      text-align: center;
+    }
+    .hrkit-cta h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: var(--calma);
+      margin-bottom: 2rem;
+    }
+    .hrkit-cta__acciones {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn--outline-calma {
+      background: transparent;
+      border: 2px solid var(--calma);
+      color: var(--calma);
+    }
+    .btn--outline-calma:hover { background: var(--calma); color: var(--idea); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .hrkit-features__grid { grid-template-columns: 1fr; }
+      .hrkit-hero__acciones { flex-direction: column; align-items: center; }
+    }
+
+    /* ---- Precios ---- */
+    .hrkit-precios { padding: 4.5rem 0 5rem; background: var(--idea); }
+    .hrkit-precios h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: var(--calma); margin-bottom: 0.5rem; text-align: center; }
+    .hrkit-precios__intro { font-family: var(--font-textos); color: var(--teal-apagado); text-align: center; margin-bottom: 2.5rem; }
+    .hrkit-tabla { max-width: 640px; margin-inline: auto; border-collapse: collapse; width: 100%; background: transparent; }
+    .hrkit-tabla th, .hrkit-tabla td { padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid rgba(1,89,90,0.15); font-family: var(--font-botones); font-size: 0.95rem; color: var(--calma); }
+    .hrkit-tabla th { font-weight: 700; color: var(--fuerza); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.75rem; }
+    .hrkit-tabla td:last-child, .hrkit-tabla th:last-child { text-align: right; }
+    .hrkit-tabla__usd { display: block; font-size: 0.75rem; color: var(--teal-apagado); font-weight: 400; margin-top: 0.15rem; }
+    .hrkit-precios__nota { text-align: center; margin-top: 1.2rem; font-family: var(--font-textos); font-style: italic; color: var(--teal-apagado); font-size: 0.9rem; }
+  </style>
+</head>
+<body class="page--sub">
+  <header class="nav nav--solid">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Voltio — home">
+        <img class="nav__wordmark" src="../assets/logos/Voltio Calma.png" alt="Voltio">
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="index.html#servicios">Services</a>
+        <a href="index.html#opiniones">Clients</a>
+        <a href="index.html#contacto">Contact</a>
+        <a href="productos.html">Products</a>
+        <a href="nosotros.html">About us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hrkit-hero">
+      <div class="container hrkit-hero__inner">
+        <div class="hrkit-hero__badges">
+          <span class="hrkit-hero__badge">Early access</span>
+          <span class="hrkit-hero__badge hrkit-hero__badge--ghost">HR</span>
+          <span class="hrkit-hero__badge hrkit-hero__badge--ghost">SMBs</span>
+        </div>
+        <h1 class="hrkit-hero__titulo">HRKit</h1>
+        <p class="hrkit-hero__tagline">HR for your small company, without the scattered spreadsheets. Time tracking, leave, payslips and comms in a single app.</p>
+        <div class="hrkit-hero__acciones">
+          <a href="https://calendly.com/benito-voltiodev/30min" target="_blank" rel="noopener" class="btn btn--fuerza">Request a demo</a>
+          <a href="index.html#contacto" class="btn btn--outline-calma">Become a founding client</a>
+        </div>
+        <div style="display:flex; gap:2.5rem; margin-top:2rem; flex-wrap:wrap; justify-content:center;">
+          <div class="hrkit-hero__stat"><strong>All-in-one</strong>one single price</div>
+          <div class="hrkit-hero__stat"><strong>USD 170</strong>from, per month</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="hrkit-problema">
+      <div class="container">
+        <div class="hrkit-problema__inner reveal">
+          <p class="hrkit-seccion-label">The problem</p>
+          <h2>Your HR lives spread across spreadsheets</h2>
+          <p>Attendance in one Excel, leave in another, payslips in a folder somebody renamed. When an employee asks how many vacation days they have left, you open three files to answer. And only one person really understands that spreadsheet: the day they're out, the data is out too. HRKit brings it all into one shared, tidy place, so Excel can finally rest.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL-IN-ONE -->
+    <section class="hrkit-features">
+      <div class="container">
+        <p class="hrkit-seccion-label">All-in-one</p>
+        <h2 class="reveal">All of HR in a single app</h2>
+        <div class="hrkit-features__grid">
+          <div class="hrkit-feature reveal">
+            <h3>Time &amp; attendance</h3>
+            <p>Time tracking, schedules, bands, rotation, tolerances and holidays. The system knows what to expect from each person each day, and builds the daily view and reports on its own.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Leave</h3>
+            <p>Requested, approved and on the record, with templates so you're not setting up the same thing again. Leave flows into attendance automatically.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Documents &amp; payslips</h3>
+            <p>Payslips and documents go out from the app, with e-signature, WhatsApp delivery and proof the person actually opened them.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Comms &amp; climate</h3>
+            <p>Internal board and announcements with read receipts, plus climate surveys, anonymous or identified.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Records &amp; onboarding</h3>
+            <p>A record for each person with self-service: employees edit their own data and HR approves the sensitive fields. Bulk-import your current spreadsheet and onboard new hires with templates.</p>
+          </div>
+          <div class="hrkit-feature reveal">
+            <h3>Reports &amp; audit</h3>
+            <p>Attendance per employee, presenteeism and hours worked, without exporting anywhere. Plus a readable audit trail of who did what.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFFERENTIATORS -->
+    <section class="hrkit-problema">
+      <div class="container">
+        <div class="hrkit-problema__inner reveal">
+          <p class="hrkit-seccion-label">Why HRKit</p>
+          <h2>In the cloud, running in days</h2>
+          <p>It runs in the browser, at the office or from home. Nothing to install, no single PC the system depends on. And setup is measured in days, not months: import your current spreadsheet and go, with no endless implementation project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="hrkit-precios">
+      <div class="container">
+        <p class="hrkit-seccion-label">Pricing</p>
+        <h2 class="reveal">One plan, everything included</h2>
+        <p class="hrkit-precios__intro reveal">No modules billed on the side. Pricing is per number of employees and drops with volume.</p>
+        <table class="hrkit-tabla reveal">
+          <thead>
+            <tr><th>Plan</th><th>Per month</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Up to 35 employees</td><td>USD 170 <span class="hrkit-tabla__usd">ARS 250,000</span></td></tr>
+            <tr><td>Up to 90 employees</td><td>USD 400 <span class="hrkit-tabla__usd">ARS 600,000</span></td></tr>
+            <tr><td>Up to 150 employees</td><td>USD 570 <span class="hrkit-tabla__usd">ARS 850,000</span></td></tr>
+            <tr><td>Up to 200 employees</td><td>USD 670 <span class="hrkit-tabla__usd">ARS 1,000,000</span></td></tr>
+          </tbody>
+        </table>
+        <p class="hrkit-precios__nota">More than 200 employees: custom plan. Every plan includes everything, no separate modules.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="hrkit-cta">
+      <div class="container">
+        <p class="hrkit-seccion-label" style="text-align:center;">Interested?</p>
+        <h2 class="reveal">Become a founding client</h2>
+        <div class="hrkit-cta__acciones reveal">
+          <a href="https://calendly.com/benito-voltiodev/30min" target="_blank" rel="noopener" class="btn btn--calma">Request a demo</a>
+          <a href="index.html#contacto" class="btn btn--outline-calma">Contact Voltio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <h4>Voltio</h4>
+        <a href="nosotros.html">About us</a>
+        <a href="index.html#como-trabajamos">How we work</a>
+        <a href="index.html#opiniones">Clients</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:benito@voltiodev.com">Email</a>
+        <a href="https://wa.me/5493416289453" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="index.html#contacto">Free diagnosis</a>
+      </div>
+      <div class="footer__col">
+        <h4>Products</h4>
+        <a href="productos.html">All products</a>
+        <a href="hrkit.html">HRKit</a>
+        <a href="proder.html">Corporate Prode</a>
+        <a href="productos.html#pueriapp">PueriApp</a>
+      </div>
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__marca">
+        <img src="../assets/logos/Voltio Idea.png" alt="Voltio" class="footer__logo" width="160">
+        <p class="footer__tagline">The force that <em>moves your business</em></p>
+      </div>
+      <p class="footer__copy">© 2026 Voltio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script defer src="../js/analytics.js"></script>
+  <script defer src="../js/utm.js"></script>
+</body>
+</html>
