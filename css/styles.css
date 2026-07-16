@@ -391,7 +391,7 @@ a { color: inherit; }
 .servicio {
   background:
     linear-gradient(rgba(1, 89, 90, 0.84), rgba(1, 89, 90, 0.84)),
-    #a8e0da url('../public/Recurso 15.png') center 70% / 165% no-repeat;
+    #a8e0da url('../public/Recurso 15.png?v=2') center 70% / 165% no-repeat;
   border: none;
   border-radius: 42px 8px 42px 8px;
   padding: 2.2rem 1.8rem;
@@ -412,7 +412,9 @@ a { color: inherit; }
 /* Tarjeta flexible: misma textura/forma que las viñetas, con la pastilla en CSS */
 .producto {
   position: relative;
-  background: #a8e0da url('../public/Recurso 15.png') center 70% / 165% no-repeat;
+  /* 200%: la forma del recurso llega mas abajo, asi el borde claro del pie
+     queda fino. A 165% la forma terminaba ~19px antes del piso de la tarjeta. */
+  background: #a8e0da url('../public/Recurso 15.png?v=2') center 70% / 200% no-repeat;
   border-radius: 42px 8px 42px 8px;
   color: var(--calma);
   display: flex;
@@ -445,7 +447,10 @@ a { color: inherit; }
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--calma);
-  margin-top: 1rem;
+  /* Empuja precio y boton al pie: con la grilla igualando alturas,
+     quedan alineados entre todas las tarjetas. */
+  margin-top: auto;
+  padding-top: 1rem;
   text-align: center;
 }
 .producto__precio span {
@@ -473,7 +478,7 @@ a { color: inherit; }
 .testimonio {
   background:
     linear-gradient(rgba(1, 89, 90, 0.84), rgba(1, 89, 90, 0.84)),
-    #a8e0da url('../public/Recurso 15.png') center 70% / 165% no-repeat;
+    #a8e0da url('../public/Recurso 15.png?v=2') center 70% / 165% no-repeat;
   border: none;
   border-radius: 42px 8px 42px 8px;
   padding: 2.2rem 1.8rem;
@@ -556,7 +561,7 @@ a { color: inherit; }
 }
 .dolor__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .dolor__card {
-  background: #a8e0da url('../public/Recurso 15.png') center 70% / 165% no-repeat;
+  background: #a8e0da url('../public/Recurso 15.png?v=2') center 70% / 165% no-repeat;
   border-radius: 42px 8px 42px 8px;
   padding: 2rem 1.8rem;
 }
