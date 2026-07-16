@@ -8,7 +8,7 @@
 - **Aplicaciones a medida**: software específico para el proceso de cada negocio, sin soluciones genéricas. Precio: consultar según proyecto.
 - **Landing pages**: sitios web optimizados que generan consultas y trabajan para el negocio. Precio: desde $X (consultar).
 
-## Productos propios en uso
+## Productos propios
 
 ### HRKit
 Software de RRHH todo-en-uno para pymes y medianas empresas argentinas. Reúne en una sola app multi-empresa: fichaje y horarios (franjas, rotación, tolerancias, feriados), asistencia con vista diaria y casos de ausentismo, licencias con aprobación y plantillas, recibos y documentos con firma electrónica y acuse de lectura (envío por WhatsApp), comunicaciones internas y encuestas de clima (anónimas o identificadas), legajos con autoservicio del empleado e import masivo de planillas, y reportes de asistencia/presentismo/horas más auditoría legible. Cada empresa cliente tiene su propio espacio, aislado a nivel base de datos (RLS de Postgres). Posicionamiento: un plan, todo incluido, un solo precio — el fin de las planillas de Excel sueltas y los módulos que se cobran aparte. En la nube, sin instalar nada, con puesta en marcha en días. **Precio: por cantidad de empleados, desde $250.000 por mes** (planes de $250.000 a $1.000.000 por mes según cantidad, hasta 200 empleados; +200 a medida). Estado: early access / en validación con RRHH reales. "HRKit" es un nombre provisorio. Demo guiada a pedido. Más info: https://voltiodev.com/hrkit.html
