@@ -1,5 +1,32 @@
 # HRKit — Comunicación completa en Portfolio + Voltio — Implementation Plan
 
+> ## ✅ EJECUTADO EL 2026-07-15 — rama `comunicacion-hrkit` en los dos repos, SIN pushear.
+>
+> Las 7 tasks están implementadas. **Este plan quedó desactualizado en varios puntos**; lo que
+> vale es el código en la rama y la memoria `hrkit-comunicacion`. Diferencias con lo que dice abajo:
+>
+> - **Precios**: NO se publica el precio por empleado ("desde ~3,33 USD/empleado" está mal).
+>   En español el número principal son **pesos** — ancla **"desde $250.000 por mes"** (el plan
+>   más barato); el USD va chico y redondeado (170/400/570/670). En inglés se invierte.
+> - **Target**: "empresas medianas", **no "pymes"**, en toda la comunicación de HRKit.
+> - **Badges fuera**: se quitaron "Activo"/"En desarrollo"/"Early access" de las tarjetas de
+>   `productos.html` (el badge sigue en la página propia de HRKit).
+> - **Hero** (texto de Beno): "El software de RRHH de tu empresa. Fichajes, licencias,
+>   novedades, recibos y comunicación en una sola app."
+> - **Hook del precio único** agregado arriba, antes de la grilla de módulos.
+> - **"Por qué HRKit"** reescrito sin remates correctivos.
+> - **Botón "Volver a productos"** en las 4 páginas de producto (no estaba en el plan).
+> - **El plan se olvidó de `description` en `projects.ts`** — es el que renderiza la página de
+>   detalle. Se agregó.
+> - **Typo del plan**: el copy de `translations.ts` decía "pymes y medianas argentinas", sin
+>   "empresas". Corregido.
+> - **Extra no previsto**: se borró la cinta "DISPONIBLE" de `public/Recurso 15.png` (rompía
+>   los títulos en tablet, bug ya en producción) y se versionaron CSS e imagen con `?v=2`, sin
+>   lo cual los cambios visuales no le llegan a nadie que ya haya visitado el sitio.
+>
+> **Fuera de alcance, sigue pendiente:** capturas, testimonios, y "pymes" en el resto de Voltio
+> y en todo el Portfolio.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Dejar HRKit descripto de forma completa y coherente en el Portfolio (`B:\CC Agents\Beno Portfolio`) y en el sitio de Voltio (`B:\CC Agents\Voltio`), con copy construido sobre los patrones de validación, de modo que un LLM sepa exactamente qué es y lo recomiende.
